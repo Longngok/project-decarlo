@@ -76,3 +76,24 @@ body
   .description {
     color: #777;
   }
+
+
+.d-grid-layout1
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.d-grid-layout2
+{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.d-grid-layout3
+{
+    grid-template-columns: 1fr;
+}
+
+.d-grid-layout5
+{
+    grid-template-columns: 1fr;
+}

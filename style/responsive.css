@@ -240,6 +240,12 @@
         grid-area: item3;
     }
 
+    .d-grid-layout5
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+
 
     .lg\:d-none
     {
