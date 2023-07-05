@@ -1,0 +1,581 @@
+html
+{
+    font-size: 62.5%;
+}
+
+.container
+{
+    max-width: 345px;
+    margin: 0 auto 4rem auto;
+}
+
+.container2
+{
+    max-width: 345px;
+    padding: var(--spacing-11) var(--spacing-5);
+}
+
+/*--font--*/
+.h1
+{
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+}
+
+.h3
+{
+    font-size: var(--heading-medium);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+}
+
+.h4
+{
+    font-size: var(--heading-small);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+}
+
+.h5
+{
+    font-size: var(--heading-ex-small);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+}
+
+.font-18
+{
+    font-size: 1.8rem;
+}
+
+.body-text
+{
+    font-size: var(--heading-ex-small);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+    color: var(--color-grey4);
+}
+
+.l-spacing
+{
+    letter-spacing: 0.2rem;
+}
+
+
+
+/*--width height--*/
+.logo-size
+{
+    width: 79.245px;
+    height: var(--spacing-11);
+}
+
+.logo-ft-size
+{
+    width: 92.941px;
+    height: 50px;
+}
+
+.max-wh-1
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+.max-wh-2
+{
+    max-width: 2.5rem;
+    max-height: 2.5rem;
+}
+
+.max-width-345
+{
+    max-width: 345px;
+}
+
+.wh-40
+{
+    width: var(--spacing-11);
+    height: var(--spacing-11);
+}
+
+.wh-100
+{
+    width: 100%;
+    height: 100%;
+}
+
+.wh-150
+{
+    width: 15rem;
+    height: 15rem;
+}
+
+.width-5
+{
+    width: 0.5rem;
+}
+
+.width-100
+{
+    width: 100%;
+}
+
+.width-327
+{
+    max-width: 32.7rem;
+}
+
+.height-9
+{
+    height: 0.9rem;
+}
+
+.height-41
+{
+    height: 4.1rem;
+}
+
+.height-300
+{
+    height: 30rem;
+}
+
+.height-100
+{
+    height: 100%;
+}
+
+/*--padding--*/
+.padding-15
+{
+    padding: 0 var(--spacing-5);
+}
+.padding-10
+{
+    padding: var(--root-font-size);
+}
+.padding-13
+{
+    padding: var(--spacing-3) 0;
+}
+
+.padding-15
+{
+    padding: var(--spacing-5);
+}
+
+.padding-15-74
+{
+    padding:  var(--spacing-15) var(--spacing-5);
+}
+
+.padding-8-14
+{
+    padding: var(--spacing-1) var(--spacing-4);
+}
+.padding-13-15
+{
+    padding: var(--spacing-3) var(--spacing-5);
+}
+
+.padding-12-32
+{
+    padding: var(--spacing-2) var(--spacing-10);
+}
+
+.padding-20-50
+{
+    padding: var(--spacing-6) var(--spacing-12);
+}
+
+.padding-23
+{
+    padding: var(--spacing-7) 0;
+}
+
+.padding-30-15
+{
+    padding: var(--spacing-9) var(--spacing-5);
+}
+
+.padding-30-60
+{
+    padding: var(--spacing-13) var(--spacing-9);
+}
+
+.padding-40-15
+{
+    padding: var(--spacing-11) var(--spacing-5);
+}
+
+.padding-40
+{
+    padding: var(--spacing-11) 0;
+}
+
+.padding-50
+{
+    padding: var(--spacing-12) 0;
+}
+
+/*--margin--*/
+.margin-auto
+{
+    margin: auto
+}
+
+.mt-117
+{
+    margin-top: 11.7rem;
+}
+
+.mb-0
+{
+    margin-bottom: 0;
+}
+
+.mb-15
+{
+    margin-bottom: var(--spacing-5);
+}
+
+.mt-20
+{
+    margin-top: var(--spacing-6);
+}
+
+.mb-10
+{
+    margin-bottom: var(--root-font-size);
+}
+
+.mb-25
+{
+    margin-bottom: var(--spacing-8);
+}
+
+.mb-20
+{
+    margin-bottom: var(--spacing-6);
+}
+
+.mb-30
+{
+    margin-bottom: var(--spacing-9);
+}
+
+.mb-40
+{
+    margin-bottom: var(--spacing-11);
+}
+
+.mb-70
+{
+    margin-bottom: var(--spacing-14);
+}
+
+
+/*--gap--*/
+.gap-10
+{
+    gap: var(--root-font-size);
+}
+
+.gap-15
+{
+    gap: var(--spacing-5);
+}
+
+.gap-20
+{
+    gap: var(--spacing-6);
+}
+
+.gap-25
+{
+    gap: var(--spacing-8);
+}
+
+.gap-30
+{
+    gap: var(--spacing-9);
+}
+
+.gap-60
+{
+    gap: var(--spacing-13);
+}
+
+
+/*--position--*/
+.p-absolute
+{
+    position: absolute;
+}
+
+.p-relative
+{
+    position: relative;
+}
+
+.p-fixed
+{
+    position: fixed;
+}
+
+.top-50pc
+{
+    top: 50%;
+}
+.top-10
+{
+    top: var(--root-font-size);
+}
+
+.top-20
+{
+    top: var(--spacing-6);
+}
+.top-70
+{
+    top: var(--spacing-14);
+}
+
+.left-0
+{
+    left: 0;
+}
+
+.left-15
+{
+    left: var(--spacing-5);
+}
+
+.right-0
+{
+    right: 0;
+}
+
+.right-10
+{
+    right: var(--root-font-size);
+}
+
+.right-20
+{
+    right: var(--spacing-6);
+}
+
+.right-50
+{
+    right: var(--spacing-12);
+}
+
+.bottom-10
+{
+    bottom: var(--root-font-size);
+}
+
+.bottom-15
+{
+    bottom: var(--spacing-5);
+}
+
+
+.z-index-100
+{
+    z-index: 100;
+}
+
+/*--display flex--*/
+.d-flex
+{
+    display: flex;
+}
+
+.d-flex-cl
+{
+    flex-direction: column;
+}
+
+.d-iblock
+{
+    display: inline-block;
+}
+
+.j-content--sb
+{
+    justify-content: space-between;
+}
+
+.a-item--center
+{
+    align-items: center;
+}
+
+.p-item--center
+{
+    place-items: center;
+}
+
+/*--display grid--*/
+.d-grid
+{
+    display: grid;
+}
+
+.d-grid-layout1
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.d-grid-layout2
+{
+    grid-template-columns: repeat(4,1fr);
+}
+
+.d-grid-layout3
+{
+    grid-template-columns: 1fr;
+}
+
+.d-grid-layout5
+{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+/*--color--*/
+.bc-primary
+{
+    background-color: var(--color-primary);
+}
+
+.bc-secondary
+{
+    background-color: var(--color-secondary);
+}
+
+.bc-dark
+{
+    background-color: var(--color-dark);
+}
+
+.bc-grey0
+{
+    background-color: var(--color-grey0);
+}
+
+.c-grey5
+{
+    color: var(--color-grey5);
+}
+
+.c-primary
+{
+    color: var(--color-primary);
+}
+
+.c-secondary
+{
+    color: var(--color-secondary);
+}
+
+.c-grey1
+{
+    color: var(--color-grey1);
+}
+
+
+/*--button--*/
+.btn
+{
+    display: inline-block;
+    font-size: var(--heading-ex-small);
+    font-weight: var(--font-weight);
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
+    cursor: pointer;
+}
+
+.btn-wh
+{
+    width: 12.5rem;
+}
+
+.btn-secondary
+{
+    background-color: var(--color-secondary);
+}
+
+.btn-link
+{
+    background-color: transparent;
+}
+
+.btn-border--none
+{
+    border: none;
+}
+
+
+/*--border--*/
+.border-bt--grey
+{
+    border-bottom: 1px solid var(--color-grey2);
+}
+
+.border-primary
+{
+    border: 1px solid var(--color-primary);
+}
+
+.border-bt-dark2
+{
+    border-bottom: 1px solid var(--color-dark2);
+}
+
+/*--another helper class--*/
+.l-style--none
+{
+    list-style: none;
+}
+
+.t-decor--none
+{
+    text-decoration: none;
+}
+
+.t-transf--uc
+{
+    text-transform: uppercase;
+}
+
+.t-align--center
+{
+    text-align: center;
+}
+
+.scroll
+{
+    overflow-y: scroll;
+}
+
+.price::before
+{
+    content: "$";
+}
+
+.bg-style
+{
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.bg-img
+{
+    background-image: url("../img/main/banner/banner-img2.png");
+}
+
+  

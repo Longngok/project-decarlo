@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/var.css">
+    <link rel="stylesheet" href="style/utility.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="p-fixed width-100 z-index-100 " style="top: 0;">
+            <div class="d-flex lg:j-content--center j-content--sb bc-primary padding-13-15">
+                <span class="h5 c-secondary l-spacing t-transf--uc">Free shipping in Italy</span>
+                <select class="h5 c-secondary btn-link btn-border--none lg:p-absolute right-50">
+                    <option value="">Italian</option>
+                    <option value="">English</option>
+                    <option value="">VietNam</option>
+                    <option value="">Chinese</option>
+                </select>
+            </div>
+            <div class="d-flex j-content--sb a-item--center padding-15 lg:padding-20-50 p-relative bc-secondary">
+                <a class="d-iblock" href="">
+                    <img class="logo-size lg:logo-size" src="img/header/logo.png" alt="logo">
+                </a>
+                <nav class="p-absolute width-100 top-70 left-0 lg:p-static dropdown-menu">
+                    <ul class="l-style--none d-flex d-flex-cl lg:j-content--center lg:d-flex-row gap-30 lg:gap-50 padding-30-15 bc-secondary">
+                        <li><a class="d-iblock t-decor--none h5 c-primary l-spacing t-transf--uc" href="">Shop</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary l-spacing t-transf--uc" href="">Our History</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary l-spacing t-transf--uc" href="">JEWELERY PRODUCTION</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary l-spacing t-transf--uc" href="">BECOME A DEALER</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary l-spacing t-transf--uc" href="">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex gap-20 lg:gap-25 h5 c-primary">
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-search.png" alt="search">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-love.png" alt="love">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-user.png" alt="user">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-cart.png" alt="cart">
+                    </button>
+                    <div id="togglebar" class=" d-flex d-flex-cl toggle lg:d-none max-wh-1" onclick="togglebar()" style="gap: 0.9rem;">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-117 lg:mt-168">
+        <section class="banner mb-40 lg:mb-100">
+            <div class="p-relative c" style="overflow: hidden;">
+                <div class="banner-images bg-style d-flex">
+                  <img class="banner-img" src="img/main/banner/banner-img1.png" alt="">
+                  <img class="banner-img" src="img/main/banner/banner-img2.png" alt="">
+                </div>
+                
+                <div class="p-relative max-width-345 lg:max-width-1180 gap-25 lg:gap-45 margin-auto">
+                    <div class="p-absolute bottom-15 lg:bottom-50">
+                        <h1 class="font-18 h1 l-spacing c-secondary mb-15 lg:mb-20 lg:font-weight-600">DECORAZIONI PER LE FESTE</h1>
+                        <a class="btn btn-secondary btn-border--none h5 l-spacing c-primary padding-12-32 t-transf--uc">Shop now</a>
+                    </div>
+                </div>
+                
+                <div class="p-absolute top-50pc d-flex j-content--sb width-100 padding-15">
+                  <button class="btn btn-link btn-border--none max-wh-2" id="prevButton">
+                    <img class="wh-100" src="img/main/banner/Arrow-left.png" alt="">
+                  </button>
+                  <button class="btn btn-link btn-border--none max-wh-2" id="nextButton">
+                    <img class="wh-100" src="img/main/banner/Arrow-right.png" alt="">
+                  </button>
+                </div>
+              </div>
+        </section>
+        <section class="shop-by">
+            <div class="container">
+                <h2 class="h1 l-spacing c-primary t-transf--uc t-align--center mb-25 lg:mb-45 lg:font-weight-600">Shop by category</h2>
+                <div class="d-grid d-grid-layout1 gap-15 lg:gap-20">
+                    <div class="d-grid__item width-100">
+                        <div class="card p-relative">
+                            <img class="card-img wh-100" src="img/main/card/img-card1.png" alt="">
+                            <div class="card-body d-grid p-item--center p-absolute left-0 right-0 bottom-10 lg:bottom-30">
+                                <a class="btn btn-wh btn-secondary btn-border--none padding-13 t-align--center c-primary t-transf--uc">rings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid__item width-100">
+                        <div class="card p-relative">
+                            <img class="card-img wh-100" src="img/main/card/img-card2.png" alt="">
+                            <div class="card-body d-grid p-item--center p-absolute left-0 right-0 bottom-10 lg:bottom-30">
+                                <a class="btn btn-wh btn-secondary btn-border--none padding-13 t-align--center c-primary t-transf--uc">BraceLets</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid__item width-100">
+                        <div class="card p-relative d-flex j-content--center">
+                            <img class="card-img wh-100" src="img/main/card/img-card3.png" alt="">
+                            <div class="card-body d-grid p-item--center p-absolute left-0 right-0 bottom-10 lg:bottom-30">
+                                <a class="btn btn-wh btn-secondary btn-border--none padding-13 t-align--center c-primary t-transf--uc">Earings</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-grid__item width-100">
+                        <div class="card p-relative">
+                            <img class="card-img wh-100" src="img/main/card/img-card4.png" alt="">
+                            <div class="card-body d-grid p-item--center p-absolute left-0 right-0 bottom-10 lg:bottom-30">
+                                <a class="btn btn-wh btn-secondary btn-border--none padding-13 t-align--center c-primary t-transf--uc">NeckLace</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container d-flex d-flex-cl lg:d-flex-row">
+                <div class="video-wrapper">
+                    <img class="wh-100" src="img/main/video/Rectangle 151.png" alt="">
+                </div>
+                <div class="content-wrapper bc-grey0 padding-30-60 lg:padding-133-90">
+                    <h2 class="h1 c-primary l-spacing lg:font-weight-600 mb-20">WE FOCUS ON WHAT’S REALLY IMPORTANT</h2>
+                    <p class="body-text mb-70">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et doloreLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor consecte</p>
+                    <a href="#" class="btn btn-secondary btn-border--none c-primary t-decor--none padding-12-32">DISCOVER THE STORY</a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <h2 class="h1 c-primary t-align--center mb-25 lg:mb-45 lg:font-weight-600">FEATURED PRODUCT</h2>
+                <div class="d-grid d-grid-layout2 gap-15 scroll">
+                    <div class="grid__item">
+                        <div class="card d-flex d-flex-cl a-item--center">
+                            <a class="d-iblock card-img p-relative">
+                                <img class="wh-150 lg:wh-280" src="img/main/card/img-card5.png" alt="">
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20"><img class="wh-100" src="img/header/icon-love.png" alt=""></button>
+                            </a>
+                            <div class="card-body d-flex d-flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc lg:font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card">
+                            <a class="d-iblock card-img p-relative">
+                                <img class="wh-150 lg:wh-280" src="img/main/card/img-card5.png" alt="">
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20"><img class="wh-100" src="img/header/icon-love.png" alt=""></button>
+                            </a>
+                            <div class="card-body d-flex d-flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc lg:font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card ">
+                            <a class="d-iblock card-img p-relative">
+                                <img class="wh-150 lg:wh-280" src="img/main/card/img-card5.png" alt="">
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20"><img class="wh-100" src="img/header/icon-love.png" alt=""></button>
+                            </a>
+                            <div class="card-body d-flex d-flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc lg:font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card">
+                            <a class="d-iblock card-img p-relative">
+                                <img class="wh-150 lg:wh-280" src="img/main/card/img-card5.png" alt="">
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20"><img class="wh-100" src="img/header/icon-love.png" alt=""></button>
+                            </a>
+                            <div class="card-body d-flex d-flex-cl a-item--center  gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc lg:font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="p-relative bg-img bg-style">
+                <div class="d-flex d-flex-cl gap-20 container2 margin-auto">
+                    <h2 class="h3 c-secondary l-spacing t-transf--uc lg:font-weight-600 t-transf--uc">NEW COLLECTION 2021</h2>
+                    <p class="body-text mb-10 width-327">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+                    <a class="d-flex gap-10 a-item--center" href="">
+                        <span class="h5 c-secondary l-spacing t-transf--uc">See more</span>
+                        <img class="width-5 height-9 c-secondary" src="img/main/card/Arrow-right.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bc-grey0">
+            <div class="container2 margin-auto">
+                <h2 class="h1 t-align--center c-primary l-spacing t-transf--uc mb-25 lg:mb-45 lg:font-weight-600">Our Service</h2>
+                <div class="d-grid d-grid-layout3 gap-20">
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex d-flex-cl a-item--center">
+                                <h3 class="h4 c-primary l-spacing lg:font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="body-text mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc">read more</span>
+                                    <img class="width-5 height-9" src="img/main/card/Arrow-right.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex d-flex-cl a-item--center">
+                                <h3 class="h4 c-primary l-spacing lg:font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="body-text mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc">read more</span>
+                                    <img class="width-5 height-9" src="img/main/card/Arrow-right.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex d-flex-cl a-item--center">
+                                <h3 class="h4 c-primary l-spacing lg:font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="body-text mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc">read more</span>
+                                    <img class="width-5 height-9" src="img/main/card/Arrow-right.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex d-flex-cl a-item--center">
+                                <h3 class="h4 c-primary l-spacing lg:font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="body-text mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc">read more</span>
+                                    <img class="width-5 height-9" src="img/main/card/Arrow-right2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bc-primary">
+            <div class="max-width-345 lg:max-width-1180 margin-auto">
+                <div class="d-grid p-item--center border-bt-dark2 padding-40 lg:padding-50">
+                    <img class="logo-ft-size lg:logo-ft-size" src="img/footer/img-logoft.png" alt="">
+                </div>
+                <div class="d-grid d-grid-layout4 gap-60 lg:gap-130 padding-50 lg:padding-70">
+                    <div class="grid__item">
+                        <form class="d-flex d-flex-cl gap-20 lg:gap-30" action="">
+                            <label class="h5 c-grey5 l-spacing" for="">SUBSCRIBE FOR NEWSLETTER</label>
+                            <div class="p-relative height-41 lg:width-280">
+                                <input class="wh-100 padding-10 bc-dark btn-border--none" type="email" placeholder="Your Email">
+                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-10 right-10">Subcribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="grid__item">
+                        <div class="d-flex d-flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">Social</h3>
+                            <ul class="d-flex a-item--center gap-15 l-style--none">
+                                <li><a class="d-iblock max-wh-1 t-decor--none body-text" href=""><img class="wh-100" src="img/footer/img-fb.png" alt=""></a></li>
+                                <li><a class="d-iblock max-wh-1 t-decor--none body-text"href=""><img class="wh-100" src="img/footer/img-ins.png" alt=""></a></li>
+                                <li><a class="d-iblock max-wh-1 t-decor--none body-text" href=""><img class="wh-100" src="img/footer/img-linkedin.png" alt=""></a></li>
+                                <li><a class="d-iblock max-wh-1 t-decor--none body-text" href=""><img class="wh-100" src="img/footer/img-yt.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="d-flex d-flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">CUSTOMER CARE</h3>
+                            <ul class="d-flex d-flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none body-text" href="">track your order</a></li>
+                                <li><a class="d-iblock t-decor--none body-text" href="">Frequent Question</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="d-flex d-flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL INFORMATION:</h3>
+                            <ul class="d-flex d-flex-cl gap-15 l-style--none">
+                                <li><p class="body-text">Company name: De Carlo Nicholas</p></li>
+                                <li><p class="body-text">VAT number: 07020260480</p></li>
+                                <li><p class="body-text">REA: FI-674952</p></li>
+                                <li><p class="body-text">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="d-flex d-flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL TERMS:</h3>
+                            <ul class="d-flex d-flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none body-text" href="">Informazioni legali</a></li>
+                                <li><a class="d-iblock t-decor--none body-text" href="">Condizioni generali di vendita</a></li>
+                                <li><a class="d-iblock t-decor--none body-text" href="">Informativa sulla privacy</a></li>
+                                <li><a class="d-iblock t-decor--none body-text" href="">Cookie policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-23">
+                    <p class="body-text t-align--center">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
