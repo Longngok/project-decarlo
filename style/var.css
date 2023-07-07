@@ -20,19 +20,20 @@
 
     --font-weight: 400;
 
-    --spacing-1: 0.8rem;
-    --spacing-2: 1.2rem;
-    --spacing-3: 1.3rem;
-    --spacing-4: 1.4rem;
-    --spacing-5: 1.5rem;
-    --spacing-6: 2rem;
-    --spacing-7: 2.3rem;
-    --spacing-8: 2.5rem;
-    --spacing-9: 3rem;
-    --spacing-10: 3.2rem;
-    --spacing-11: 4rem;
-    --spacing-12: 5rem;
-    --spacing-13: 6rem;
-    --spacing-14: 7rem;
-    --spacing-15: 7.4rem;
+    --spacing-8: 0.8rem;
+    --spacing-10: 1rem;
+    --spacing-12: 1.2rem;
+    --spacing-13: 1.3rem;
+    --spacing-14: 1.4rem;
+    --spacing-15: 1.5rem;
+    --spacing-20: 2rem;
+    --spacing-23: 2.3rem;
+    --spacing-25: 2.5rem;
+    --spacing-30: 3rem;
+    --spacing-32: 3.2rem;
+    --spacing-40: 4rem;
+    --spacing-50: 5rem;
+    --spacing-60: 6rem;
+    --spacing-70: 7rem;
+    --spacing-74: 7.4rem;
 }
