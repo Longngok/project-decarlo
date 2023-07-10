@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/var.css">
+    <link rel="stylesheet" href="style/utility.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="p-fixed width-100 z-index-100 " style="top: 0;">
+            <div class="d-grid grid-layout1 bc-primary padding-13-15 lg:padding-13-50">
+                <div class="grid__item lg:t-align--center">
+                    <span class="h5 c-secondary fw-400 t-transf--uc">Free shipping in Italy</span>
+                </div>
+                <div class="grid__item t-align--end">
+                    <select class="h5 fw-400 c-secondary btn-link btn-border--none">
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">VietNam</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex j-content--sb a-item--center padding-15 lg:padding-20-50 p-relative bc-secondary">
+                <a class="d-iblock logo-size lg:logo-size" href="index.html">
+                    <img class="wh-100" src="img/header/logo.png" alt="logo">
+                </a>
+                <nav class="p-absolute lg:p-static width-100 lg:width-fit top-70 left-0 dropdown-menu">
+                    <ul class="l-style--none d-flex flex-cl lg:j-content--center lg:d-flex-row gap-30 lg:gap-50 padding-30-15 lg:padding-0 bc-secondary">
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="">Shop</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BH.html">Our History</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="COP.html">JEWELERY PRODUCTION</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BAD.html">BECOME A DEALER</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex gap-20 lg:gap-25 c-primary">
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-search.png" alt="search">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-love.png" alt="love">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-user.png" alt="user">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-cart.png" alt="cart">
+                    </button>
+                    <div id="togglebar" class=" d-flex flex-cl toggle lg:d-none wh-20" onclick="togglebar()" style="gap: 0.9rem;">
+                        <div class="bar1 wh-100"></div>
+                        <div class="bar2 wh-100"></div>
+                        <div class="bar3 wh-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-120 lg:mt-160">
+        <section class="bc-grey0">
+            <div class="container padding-56 lg:padding-82 t-align--center t-transf--uc">
+                <h1 class="fs-18 h1 l-spacing line-h-1.5 font-weight-600">FREQUANTLY ASKED QUESTIONS</h1>
+            </div>
+        </section>
+        <section>
+            <div class="container p-relative padding-ver-40 lg:padding-ver-100" style="overflow: hidden;">
+                <div class="d-flex lg:j-content--center gap-40 padding-13 lg:padding-0 scroll mb-37 lg:mb-60">
+                    <button class="btn btn-link btn-success active-btn flex-item fs-18 " onclick="toggleFAQChange(this, 1)">PURCHASE</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this, 2)">REFUND</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this, 3)">PAYMENT</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this, 4)">COVID 19</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this, 5)">PRODUCT</button>
+                </div>
+                <div class="FAQ-container mb-60 lg:mb-100">
+                    <div class="FAQ-change slide-in" data-faq="1">
+                        <div class="boder-bt--grey3 change-menu">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ-change slide-out" data-faq="2">
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ-change slide-out" data-faq="3">
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ-change slide-out" data-faq="4">
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ-change slide-out" data-faq="5">
+                        <div class="boder-bt--grey3">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
+                                <button class="btn btn-link btn-border--none">
+                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
+                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-align--center">
+                    <span class="h3">Do you have any other questions?</span>
+                    <a class="h3 c-primary" href="">Contact us now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bc-primary">
+            <div class="container">
+                <div class="d-grid p-item--center border-bt-dark2 padding-40 lg:padding-50">
+                    <img class="logo-ft-size lg:logo-ft-size" src="img/footer/img-logoft.png" alt="">
+                </div>
+                <div class="d-flex flex-cl lg:d-flex-row lg:j-content--sb gap-60 padding-50 lg:padding-70">
+                    <div class="flex__item d-flex flex-cl gap-70 lg:order-4">
+                        <form class="d-flex flex-cl gap-20 lg:gap-30" action="">
+                            <label class="h5 c-grey5 l-spacing" for="">SUBSCRIBE FOR NEWSLETTER</label>
+                            <div class="p-relative height-41 lg:width-280">
+                                <input class="wh-100 padding-10 bc-dark btn-border--none" type="email" placeholder="Your Email">
+                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-13 right-10">Subcribe</button>
+                            </div>
+                        </form>
+
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">Social</h3>
+                            <ul class="d-flex a-item--center gap-15 l-style--none">
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-fb.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2"href=""><img class="wh-100" src="img/footer/img-ins.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-linkedin.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-yt.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">CUSTOMER CARE</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">track your order</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Frequent Question</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item lg:max-width-281">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL INFORMATION:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><p class="c-grey2">Company name: De Carlo Nicholas</p></li>
+                                <li><p class="c-grey2">VAT number: 07020260480</p></li>
+                                <li><p class="c-grey2">REA: FI-674952</p></li>
+                                <li><p class="c-grey2">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL TERMS:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informazioni legali</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Condizioni generali di vendita</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informativa sulla privacy</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Cookie policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-23">
+                    <p class="c-grey2 t-align--center">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

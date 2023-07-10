@@ -3,6 +3,24 @@ html
     font-size: 62.5%;
 }
 
+*
+{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family-1);
+    font-size: 1.4rem;
+    line-height: calc(24/14);
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
 .container
 {
     max-width: 345px;
@@ -10,14 +28,29 @@ html
 }
 
 /*--font--*/
-.font-weight-600
+.fw-400
+{
+    font-weight: 400;
+}
+.fw-600
 {
     font-weight: 600;
+}
+
+.h1, .h2, .h3, .h4, .h5, .fs-18
+{
+    line-height: 1.5;
+    letter-spacing: 0.2rem;
 }
 
 .h1
 {
     font-size: var(--heading-medium);
+}
+
+.h2
+{
+    font-size: var(--heading-large);
 }
 
 .h3
@@ -38,6 +71,13 @@ html
 .h5
 {
     font-size: var(--heading-ex-small);
+}
+
+.p
+{
+    font-family: var(--font-size-2);
+    font-size: var(--heading-small);
+    line-height: calc(28/18);
 }
 
 .line-h-15
@@ -75,6 +115,12 @@ html
 {
     max-width: var(--spacing-25);
     max-height: var(--spacing-25);
+}
+
+.wh-24
+{
+    width: 2.4rem;
+    height: 2.4rem;
 }
 
 .max-width-345
@@ -142,6 +188,11 @@ html
 }
 
 /*--padding--*/
+.padding-7-18
+{
+    padding: 0.7rem var(--spacing-18);
+}
+
 .padding-15
 {
     padding: 0 var(--spacing-15);
@@ -150,6 +201,17 @@ html
 {
     padding: var(--spacing-10);
 }
+
+.padding-11-18
+{
+    padding: var(--spacing-11) var(--spacing-18);
+}
+
+.padding-11-auto
+{
+    padding: var(--spacing-11) 0;
+}
+
 .padding-13
 {
     padding: var(--spacing-13) 0;
@@ -163,6 +225,11 @@ html
 .padding-15-74
 {
     padding:  var(--spacing-15) var(--spacing-5);
+}
+
+.padding-18-20
+{
+    padding: var(--spacing-18) var(--spacing-20);
 }
 
 .padding-8-14
@@ -179,6 +246,11 @@ html
     padding: var(--spacing-12) var(--spacing-32);
 }
 
+.padding-20-0
+{
+    padding: var(--spacing-20) 0;
+}
+
 .padding-20-50
 {
     padding: var(--spacing-20) var(--spacing-50);
@@ -189,14 +261,24 @@ html
     padding: var(--spacing-23) 0;
 }
 
+.padding-30-0
+{
+    padding: var(--spacing-30) 0;
+}
+
 .padding-30-15
 {
     padding: var(--spacing-30) var(--spacing-15);
 }
 
-.padding-30-60
+.padding-30-23
 {
-    padding: var(--spacing-30) var(--spacing-60);
+    padding: var(--spacing-30) var(--spacing-23);
+}
+
+.padding-60-30
+{
+    padding: var(--spacing-60) var(--spacing-30);
 }
 
 .padding-40-15
@@ -212,6 +294,16 @@ html
 .padding-50
 {
     padding: var(--spacing-50) 0;
+}
+
+.padding-50-20
+{
+    padding:var(--spacing-50) var(--spacing-20);
+}
+
+.padding-50-40
+{
+    padding: var(--spacing-50) var(--spacing-40);
 }
 
 .padding-56
@@ -240,9 +332,19 @@ html
     margin: auto
 }
 
-.mt-110
+.margin-0-15
 {
-    margin-top: 11rem;
+    margin: 0 var(--spacing-15);
+}
+
+.mr-15
+{
+    margin-right: var(--spacing-15);
+}
+
+.mt-120
+{
+    margin-top: 12rem;
 }
 
 .mb-0
@@ -285,14 +387,39 @@ html
     margin-bottom: var(--spacing-30);
 }
 
+.mb-35
+{
+    margin-bottom: var(--spacing-35);
+}
+
+.mb-37
+{
+    margin-bottom: 3.7rem;
+}
+
 .mb-40
 {
     margin-bottom: var(--spacing-40);
 }
 
+.mb-50
+{
+    margin-bottom: var(--spacing-50);
+}
+
+.mb-60
+{
+    margin-bottom: var(--spacing-60);
+}
+
 .mb-70
 {
     margin-bottom: var(--spacing-70);
+}
+
+.ml-16
+{
+    margin-left: var(--spacing-16);
 }
 
 
@@ -302,9 +429,24 @@ html
     gap: var(--spacing-10);
 }
 
+.gap-11
+{
+    gap: var(--spacing-11);
+}
+
+.gap-13
+{
+    gap: var(--spacing-13);
+}
+
 .gap-15
 {
     gap: var(--spacing-15);
+}
+
+.gap-18
+{
+    gap: var(--spacing-18);
 }
 
 .gap-20
@@ -322,6 +464,11 @@ html
     gap: var(--spacing-30);
 }
 
+.gap-40
+{
+    gap: var(--spacing-40);
+}
+
 .gap-60
 {
     gap: var(--spacing-60);
@@ -330,6 +477,11 @@ html
 .gap-70
 {
     gap: var(--spacing-70);
+}
+
+.r-gap-40
+{
+    row-gap: var(--spacing-40);
 }
 
 
@@ -353,9 +505,9 @@ html
 {
     top: 50%;
 }
-.top-10
+.top-13
 {
-    top: var(--spacing-10);
+    top: var(--spacing-13);
 }
 
 .top-20
@@ -419,6 +571,11 @@ html
     display: flex;
 }
 
+.flex-item
+{
+    flex: 0 0 auto;
+}
+
 .flex-cl
 {
     flex-direction: column;
@@ -427,6 +584,11 @@ html
 .d-iblock
 {
     display: inline-block;
+}
+
+.j-content--center
+{
+    justify-content: center;
 }
 
 .j-content--sb
@@ -480,9 +642,9 @@ html
     background-color: var(--color-grey0);
 }
 
-.c-grey5
+.bc-grey1
 {
-    color: var(--color-grey5);
+    background-color: var(--color-grey1);
 }
 
 .c-primary
@@ -505,11 +667,21 @@ html
     color: var(--color-grey2);
 }
 
+.c-grey3
+{
+    color: var(--color-grey3);
+}
+
+.c-grey5
+{
+    color: var(--color-grey5);
+}
 
 /*--button--*/
 .btn
 {
     display: inline-block;
+    letter-spacing: 0.2rem;
     cursor: pointer;
 }
 
@@ -517,6 +689,12 @@ html
 {
     max-width: 12.5rem;
     width: 100%;
+}
+
+.btn-primary
+{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
 }
 
 .btn-secondary
@@ -527,6 +705,25 @@ html
 .btn-link
 {
     background-color: transparent;
+}
+
+.btn-success
+{
+    color: var(--color-grey3);
+    padding: var(--spacing-10);
+    border: none;
+}
+
+.btn-circle
+{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.active-btn {
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-primary);
 }
 
 .btn-border--none
@@ -549,6 +746,16 @@ html
 .border-bt-dark2
 {
     border-bottom: 1px solid var(--color-dark2);
+}
+
+.boder-bt--grey3
+{
+    border-bottom: 1px solid var(--color-grey3);
+}
+
+.border-grey6
+{
+    border: 1px solid var(--color-grey6);
 }
 
 /*--another helper class--*/
@@ -588,9 +795,29 @@ html
     scroll-snap-align: center;
 }
 
+.scroll .flex-item {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
 .price::before
 {
     content: "$";
+}
+
+.required::after
+{
+    content: "*";
+}
+
+.colon::after
+{
+    content: ":";
+}
+
+.circle-grey3::marker
+{
+    color: var(--color-grey3);
 }
 
 .bg-style
@@ -607,6 +834,16 @@ html
 .bg-img2
 {
     background-image: url("../img/main/history/img-banner.png");
+}
+
+.bg-img3
+{
+    background-image: url("../img/main/cop/img-1.png");
+}
+
+.bg-img4
+{
+    background-image: url("../img/main/product-detail/img-7.png");
 }
 
   

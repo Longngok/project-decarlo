@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/var.css">
+    <link rel="stylesheet" href="style/utility.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="p-fixed width-100 z-index-100 " style="top: 0;">
+            <div class="d-grid grid-layout1 bc-primary padding-13-15 lg:padding-13-50">
+                <div class="grid__item lg:t-align--center">
+                    <span class="h5 c-secondary fw-400 t-transf--uc">Free shipping in Italy</span>
+                </div>
+                <div class="grid__item t-align--end">
+                    <select class="h5 fw-400 c-secondary btn-link btn-border--none">
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">VietNam</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex j-content--sb a-item--center padding-15 lg:padding-20-50 p-relative bc-secondary">
+                <a class="d-iblock logo-size lg:logo-size" href="index.html">
+                    <img class="wh-100" src="img/header/logo.png" alt="logo">
+                </a>
+                <nav class="p-absolute lg:p-static width-100 lg:width-fit top-70 left-0 dropdown-menu">
+                    <ul class="l-style--none d-flex flex-cl lg:j-content--center lg:d-flex-row gap-30 lg:gap-50 padding-30-15 lg:padding-0 bc-secondary">
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="">Shop</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BH.html">Our History</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="COP.html">JEWELERY PRODUCTION</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BAD.html">BECOME A DEALER</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex gap-20 lg:gap-25 c-primary">
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-search.png" alt="search">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-love.png" alt="love">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-user.png" alt="user">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-cart.png" alt="cart">
+                    </button>
+                    <div id="togglebar" class=" d-flex flex-cl toggle lg:d-none wh-20" onclick="togglebar()" style="gap: 0.9rem;">
+                        <div class="bar1 wh-100"></div>
+                        <div class="bar2 wh-100"></div>
+                        <div class="bar3 wh-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-120 lg:mt-160">
+        <section class="brand bc-grey0">
+            <div class="container padding-56 lg:padding-82 t-align--center t-transf--uc">
+                <h1 class="h2 fw-600">Brand History</h1>
+            </div>
+        </section>
+        <section class="main">
+            <div class="container padding-ver-40 lg:padding-100">
+                <div class="video-wrapper p-relative mb-30 lg:mb-50">
+                    <img class="wh-100" src="img/main/history/video.png" alt="">
+                    <button id="playButton" class="p-absolute btn-play__position btn btn-link btn-border--none" onclick="playVideo()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="78" height="78" viewBox="0 0 78 78" fill="none">
+                            <circle cx="39" cy="39" r="38.5" stroke="white"/>
+                            <path d="M55 36.7679C56.3333 37.5377 56.3333 39.4622 55 40.232L31.75 53.6554C30.4167 54.4252 28.75 53.463 28.75 51.9234L28.75 25.0766C28.75 23.537 30.4167 22.5748 31.75 23.3446L55 36.7679Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+                <h2 class="h1 font-weight-600 mb-25 t-align--center">BIRTH OF THE BRAND</h2>
+                <p class="c-grey2 t-align--center">The DE CARLO brand was born in Florence on November 7, 2019, thanks to the passion for precious stones that Nicholas De Carlo, a Florentine entrepreneur, has cultivated since he was a child.
+                    Nicholas' goal was to launch a new line of jewelry, with a modern and innovative design, able to make all women feel unique and inimitable.
+                    All this was possible thanks to creations suitable for every occasion, with shapes that recall the essence of the maison: ELEGANCE, QUALITY, PASSION.</p>
+                <div id="videoOverlay" class="video-overlay hide">
+                    <button id="closeButton" class="btn-close" onclick="closeVideo()">&times;</button>
+                    <iframe id="videoPlayer" width="300" height="300" src="https://www.youtube.com/embed/kk-1bEP-7CA" title="Louis VUITTON High Jewelry Campaign 2019 Savoir Faire" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section class="history-main bc-grey0">
+            <div class="container padding-ver-40 lg:padding-ver-100">
+                <div class="d-flex flex-cl gap-70 lg:gap-100">
+                    <div class="card d-flex flex-cl lg:d-flex-row lg:a-item--center gap-30 lg:gap-100">
+                        <img class="card-img lg:max-wh-1 width-100 lg:order-2" src="img/main/history/img-1.png" alt="history img">
+                        <div class="card-body">
+                            <svg class="mb-30" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_35_787)">
+                                    <path d="M30.9946 0C30.2345 0 29.5622 0.381016 29.1585 0.96125C28.0499 0.68125 26.9076 0.538906 25.7424 0.538906C23.5389 0.538906 21.4315 1.03805 19.4788 2.02242C19.1769 2.17469 16.5004 3.5 16.9999 4C17.1075 4.21352 17.0005 5 17.5001 4.5C17.5001 4.5 18.3325 3.97152 20.0299 3.11586C21.8102 2.21844 23.732 1.76344 25.7423 1.76344C26.772 1.76344 27.7817 1.88656 28.763 2.12602C28.7613 2.16008 28.7604 2.19437 28.7604 2.22883C28.7604 3.45781 29.7626 4.45766 30.9945 4.45766C32.2267 4.45766 33.2289 3.45781 33.2289 2.22883C33.229 0.999844 32.2267 0 30.9946 0ZM30.9946 3.23312C30.4379 3.23312 29.985 2.78258 29.985 2.22883C29.985 1.675 30.4379 1.22453 30.9946 1.22453C31.5514 1.22453 32.0045 1.67508 32.0045 2.22883C32.0045 2.78258 31.5515 3.23312 30.9946 3.23312Z" fill="#171719"/>
+                                    <path d="M39.9498 8.46438C39.9498 7.2354 38.9476 6.23555 37.7155 6.23555C36.4834 6.23555 35.4813 7.2354 35.4813 8.46438C35.4813 9.69337 36.4834 10.6932 37.7155 10.6932C37.7652 10.6932 37.8147 10.691 37.8638 10.6877C38.2306 11.878 38.4164 13.1172 38.4164 14.3918C38.4164 20.5517 33.967 25.6949 28.1027 26.7997C28.1365 26.407 28.1547 26.0099 28.1547 25.6086C28.1547 24.8445 28.0916 24.0773 27.9672 23.3284C27.6945 21.6879 27 20.0002 26.5 21.0002C26.1665 21.0556 26.7038 23.1956 26.7593 23.5291C26.8727 24.2117 26.9302 24.9114 26.9302 25.6086C26.9302 26.0688 26.9047 26.5232 26.8563 26.9709C26.4895 27.0028 26.1184 27.0201 25.7434 27.0201C18.7556 27.0201 13.0705 21.3551 13.0705 14.3918C13.0705 13.9331 13.0959 13.4788 13.1438 13.0296C13.5109 12.9976 13.8821 12.9803 14.2574 12.9803C19.6341 12.9803 24.4414 16.3752 26.2197 21.4281C26.5 22.5002 26.7736 23.6173 27.3746 23.5291C28.1547 23.3284 27.487 21.3406 27.3746 21.0216C25.4242 15.4795 20.1528 11.7559 14.2574 11.7559C13.9488 11.7559 13.6428 11.767 13.3391 11.7869C13.9484 8.87079 15.5752 6.25977 18.0065 4.38946C20.5 2.50021 20.2061 2.76818 20 2.50021C19.7941 2.23224 19.5 2.00024 17.2598 3.41883C14.4838 5.5543 12.6639 8.57071 12.0641 11.9289C5.4393 12.9803 0.359766 18.714 0.359766 25.6086C0.359766 27.0261 0.568984 28.4041 0.982891 29.7267C0.419062 30.1317 0.0507812 30.7916 0.0507812 31.5361C0.0507812 32.7651 1.05305 33.7649 2.28516 33.7649C3.51719 33.7649 4.51938 32.7651 4.51938 31.5361C4.51938 30.3071 3.51719 29.3073 2.28516 29.3073C2.23539 29.3073 2.18594 29.3095 2.13688 29.3127C1.77 28.1224 1.58414 26.8832 1.58414 25.6086C1.58414 19.4491 6.03274 14.3065 11.8963 13.2009C11.863 13.5946 11.8458 13.9918 11.8458 14.3918C11.8458 22.0302 18.0802 28.2445 25.7433 28.2445C26.0508 28.2445 26.3557 28.2334 26.6582 28.2137C25.45 33.9313 20.349 38.2368 14.2571 38.2368C13.2273 38.2368 12.2177 38.1137 11.2364 37.8742C11.238 37.84 11.239 37.8058 11.239 37.7713C11.239 36.5424 10.2368 35.5425 9.00484 35.5425C7.77274 35.5425 6.77047 36.5424 6.77047 37.7713C6.77047 39.0003 7.77281 40.0003 9.00492 40.0003C9.76508 40.0003 10.4373 39.6192 10.841 39.0391C11.9497 39.319 13.0919 39.4614 14.2572 39.4614C21.077 39.4614 26.7652 34.5394 27.9345 28.0719C34.5601 27.0213 39.6409 21.2872 39.6409 14.3918C39.6409 12.9743 39.4316 11.5963 39.0177 10.2738C39.5817 9.86884 39.9498 9.20891 39.9498 8.46438ZM2.28516 30.5318C2.84188 30.5317 3.29484 30.9823 3.29484 31.5361C3.29484 32.0899 2.84188 32.5404 2.28516 32.5404C1.72836 32.5404 1.27531 32.0899 1.27531 31.5361C1.27523 30.9824 1.72828 30.5318 2.28516 30.5318ZM9.005 38.7757C8.4482 38.7757 7.99516 38.3252 7.99516 37.7714C7.99516 37.2176 8.4482 36.7671 9.005 36.7671C9.56172 36.7671 10.0146 37.2177 10.0146 37.7714C10.0146 38.3253 9.56172 38.7757 9.005 38.7757ZM37.7155 9.46876C37.1588 9.46876 36.7058 9.01821 36.7058 8.46446C36.7058 7.91063 37.1588 7.46016 37.7155 7.46016C38.2723 7.46016 38.7253 7.91071 38.7253 8.46446C38.7254 9.01821 38.2723 9.46876 37.7155 9.46876Z" fill="#171719"/>
+                                    <path d="M34.1471 31.2179C33.0224 30.9074 32.952 30.8371 32.6415 29.7126C32.5227 29.281 32.1268 28.9795 31.6788 28.9795C31.2309 28.9795 30.835 29.281 30.7162 29.7124C30.4057 30.8371 30.3354 30.9074 29.2104 31.218C28.7789 31.3373 28.4775 31.7332 28.4775 32.1806C28.4775 32.6279 28.7789 33.0239 29.2106 33.1433C30.3354 33.4539 30.4057 33.5243 30.7161 34.6487C30.835 35.0804 31.231 35.3818 31.6789 35.3818C32.1268 35.3818 32.5226 35.0804 32.6414 34.649C32.9521 33.5241 33.0225 33.4538 34.1474 33.1432C34.5786 33.0239 34.8799 32.6282 34.8799 32.1807C34.8799 31.7332 34.5786 31.3372 34.1471 31.2179ZM31.6789 33.6378C31.3813 32.8501 31.0094 32.4782 30.2215 32.1807C31.0092 31.8831 31.3812 31.5112 31.6788 30.7236C31.9764 31.5112 32.3483 31.8832 33.1359 32.1807C32.3485 32.4782 31.9764 32.8501 31.6789 33.6378Z" fill="#171719"/>
+                                    <path d="M11.3721 5.30484C10.2474 4.9943 10.177 4.92398 9.86654 3.79953C9.74771 3.36789 9.35178 3.06641 8.90381 3.06641C8.45592 3.06641 8.05998 3.36789 7.94123 3.7993C7.63084 4.92391 7.56045 4.9943 6.43553 5.30492C6.00404 5.42422 5.70264 5.82008 5.70264 6.26766C5.70264 6.715 6.00397 7.11086 6.43561 7.23023C7.56045 7.54086 7.63076 7.61125 7.94115 8.73563C8.06006 9.16727 8.456 9.46875 8.90389 9.46875C9.3517 9.46875 9.74764 9.16727 9.86646 8.73586C10.1772 7.61094 10.2475 7.54062 11.3724 7.23008C11.8037 7.11078 12.1049 6.71492 12.1049 6.26758C12.1049 5.82 11.8036 5.42406 11.3721 5.30484ZM8.90396 7.72477C8.60631 6.93711 8.23451 6.56516 7.44662 6.26766C8.23435 5.97 8.60631 5.59812 8.90381 4.81063C9.20146 5.5982 9.57334 5.97023 10.3609 6.26766C9.57365 6.56516 9.20162 6.93703 8.90396 7.72477Z" fill="#171719"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_35_787">
+                                        <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="h1 fw-600 mb-25">ELEGANCE</h3>
+                            <p class="c-grey2">
+                                <strong class="c-primary font-weight-600">DE CARLO means elegance</strong>
+                                <br>
+                                exhibited thanks to the shining and refined stones that portray the contemporary era, sensual, simple and eye-catching creations that perfectly frame the female body, enhancing its natural beauty.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-cl lg:d-flex-row lg:a-item--center gap-30 lg:gap-100">
+                        <img class="card-img lg:max-wh-1 width-100" src="img/main/history/img-2.png" alt="history img">
+                        <div class="card-body">
+                            <svg class="mb-30" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_35_825)">
+                                    <path d="M39.5234 16.0316L34.6652 9.55399C34.2914 9.05547 33.6908 8.75 33.0572 8.75H6.94198C6.3119 8.75 5.70884 9.05399 5.33392 9.55399L0.475902 16.0315C-0.18262 16.9095 -0.171448 18.1677 0.595278 19.0367L18.4924 39.3202C19.2912 40.2253 20.7059 40.2278 21.5068 39.3202L39.4039 19.0367C40.1779 18.1595 40.1759 16.9015 39.5234 16.0316ZM38.5857 16.8751H28.7691L33.7438 10.4087C38.8635 17.235 38.5352 16.7914 38.5857 16.8751ZM20.2158 38.5916C20.1495 38.8027 19.8499 38.8028 19.7835 38.5917L13.3511 18.1251H26.6481L20.2158 38.5916ZM22.1504 10L26.3812 16.8751H13.6181L17.8489 10H22.1504ZM23.6182 10H32.4811L27.557 16.4006L23.6182 10ZM12.4423 16.4006L7.51824 10H16.3811L12.4423 16.4006ZM6.25549 10.4087L11.2301 16.8751H1.41365C1.46411 16.7914 1.13763 17.2325 6.25549 10.4087ZM1.46513 18.1251H12.0408L17.8958 36.7547C0.783094 17.3602 1.51677 18.1962 1.46513 18.1251ZM22.1034 36.7547L27.9584 18.1251H38.534C38.4828 18.1958 39.5354 16.9984 22.1034 36.7547Z" fill="#171719"/>
+                                    <path d="M20.0005 5.625C20.3456 5.625 20.6255 5.34516 20.6255 5V0.625C20.6255 0.279844 20.3456 0 20.0005 0C19.6553 0 19.3755 0.279844 19.3755 0.625V5C19.3755 5.34516 19.6553 5.625 20.0005 5.625Z" fill="#171719"/>
+                                    <path d="M14.5115 6.64035C14.726 6.90856 15.1191 6.95465 15.3899 6.73801C15.6594 6.52238 15.7032 6.12902 15.4876 5.85957L12.9876 2.73457C12.7719 2.46496 12.3786 2.42145 12.1091 2.63692C11.8396 2.85254 11.7958 3.2459 12.0115 3.51535L14.5115 6.64035Z" fill="#171719"/>
+                                    <path d="M24.6086 6.73801C24.8798 6.95496 25.2729 6.90824 25.4871 6.64035L27.9871 3.51535C28.2027 3.2459 28.159 2.85254 27.8894 2.63692C27.6201 2.42145 27.2267 2.46496 27.011 2.73457L24.511 5.85957C24.2954 6.12902 24.3391 6.52238 24.6086 6.73801Z" fill="#171719"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_35_825">
+                                        <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="h1 fw-600 mb-25">QUAILITY</h3>
+                            <p class="c-grey2">
+                                <strong class="c-primary font-weight-600">DE CARLO means quality,</strong>
+                                <br>
+                                thanks to the mastery of craftsmen with over 25 years of experience in the goldsmith sector and a careful refinement of raw materials, to the shiny plating, to the vast chromatic range of the stones used.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card d-flex flex-cl lg:d-flex-row lg:a-item--center gap-30 lg:gap-100">
+                        <img class="card-img lg:max-wh-1 width-100 lg:order-2" src="img/main/history/img-3.png" alt="history img">
+                        <div class="card-body">
+                            <svg class="mb-30" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                <g clip-path="url(#clip0_35_811)">
+                                    <path d="M37.0869 5.42632C35.0209 2.99346 32.1619 1.55027 29.0364 1.36244C25.6719 1.1604 22.3849 2.44969 20.0182 4.89988C20.0079 4.91051 19.9921 4.91043 19.9819 4.89988C17.6152 2.44961 14.3283 1.16033 10.9636 1.36244C7.83811 1.55027 4.97914 2.99346 2.9131 5.42632C0.759791 7.96206 -0.278541 11.3243 0.0643664 14.651C0.587673 19.7275 3.52571 24.9721 8.7969 30.2392C12.9346 34.3737 17.3231 37.3036 19.0179 38.3714C19.3208 38.5622 19.6604 38.6576 20 38.6576C20.3397 38.6576 20.6792 38.5622 20.9821 38.3714C22.6769 37.3036 27.0654 34.3737 31.2031 30.2392C36.4743 24.9721 39.4123 19.7276 39.9356 14.651C40.2785 11.3243 39.2402 7.96206 37.0869 5.42632ZM38.7699 14.5308C38.2749 19.3324 35.4504 24.3385 30.3747 29.4102C29.2553 30.5287 28.1173 31.5567 27.021 32.4819C27.0127 32.4855 27.0043 32.4887 26.9961 32.4929C26.3246 32.8285 25.8989 32.4821 25.747 32.3176C25.4502 31.9961 25.3002 31.4241 25.6343 30.8712C29.1806 24.9999 28.1986 21.9624 28.1551 21.836C28.0617 21.5649 27.786 21.401 27.5033 21.4491L25.6633 21.7604C25.7544 16.4908 24.0246 13.0446 22.5194 11.0553C20.7962 8.77812 19.0053 7.86636 18.9299 7.8287C18.7469 7.73713 18.5294 7.74776 18.356 7.85667C18.1828 7.96558 18.0789 8.15692 18.082 8.36154C18.1397 12.2281 16.1893 15.6831 15.3019 17.0509L14.1878 15.6651C14.0698 15.5184 13.8888 15.4369 13.7006 15.447C13.5126 15.4568 13.3408 15.5563 13.2387 15.7146C13.2216 15.741 12.8148 16.3746 12.3554 17.3474C12.2172 17.64 12.3424 17.9893 12.6351 18.1274C12.9277 18.2656 13.277 18.1405 13.4151 17.8478C13.5556 17.5503 13.6913 17.2862 13.8101 17.0657L14.8808 18.3975C14.992 18.5359 15.16 18.6163 15.3375 18.6163C15.3395 18.6163 15.3416 18.6163 15.3436 18.6163C15.5233 18.6145 15.6922 18.5302 15.8018 18.3879C15.9365 18.213 18.8973 14.3126 19.2256 9.40846C19.8512 9.86958 20.7508 10.6484 21.6236 11.8141C23.0613 13.7343 24.7221 17.1348 24.469 22.4299C24.4606 22.6071 24.5327 22.7786 24.6655 22.8962C24.7982 23.0139 24.9769 23.065 25.1521 23.0356L27.1225 22.7022C27.2037 23.6984 27.0699 26.2277 24.6311 30.2653C24.0695 31.195 24.1719 32.3393 24.886 33.1127C25.0996 33.3439 25.3456 33.5186 25.6119 33.635C24.9588 34.1535 24.3324 34.6296 23.7472 35.0598C23.3444 34.7209 22.5677 33.7054 23.1568 31.1573C23.752 28.5833 22.8406 26.8445 21.9713 25.8392C21.0386 24.7605 19.9635 24.29 19.9182 24.2704C19.7189 24.1846 19.4884 24.2161 19.3193 24.3521C19.1501 24.4881 19.0701 24.7065 19.1112 24.9196C19.4016 26.4259 18.8443 27.5343 18.2543 28.7077C17.5439 30.1205 16.7387 31.7219 17.5971 34.0007C17.7112 34.3035 18.0494 34.4565 18.3521 34.3425C18.6549 34.2284 18.8079 33.8904 18.6939 33.5875C18.0165 31.7895 18.612 30.6054 19.3014 29.2342C19.7821 28.2782 20.3124 27.2236 20.3593 25.9173C20.5924 26.1001 20.8453 26.3286 21.0849 26.6057C22.091 27.7692 22.404 29.2117 22.0151 30.8933C21.3745 33.6637 22.136 35.0842 22.7831 35.7547C21.7542 36.4817 20.9095 37.0321 20.3575 37.3799C20.1371 37.5187 19.8631 37.5187 19.6427 37.3799C18.6749 36.7702 16.8104 35.5401 14.6215 33.8193C14.8774 33.7028 15.1123 33.53 15.315 33.3024C16.0155 32.5155 16.0794 31.3367 15.4704 30.4361L15.3569 30.2683C13.4135 27.3954 11.735 24.9144 12.3248 21.1914C12.3731 20.8866 13.4038 17.9694 13.4889 17.645C13.5711 17.3321 13.3841 17.0116 13.071 16.9295C12.7581 16.8471 12.4376 17.0343 12.3554 17.3474C12.2604 17.7092 11.2216 20.665 11.1673 21.0081C10.5052 25.1879 12.3904 27.9746 14.3862 30.925L14.4995 31.0925C14.8595 31.6249 14.7208 32.2075 14.4395 32.5233C14.1394 32.8606 13.6934 32.9156 13.2123 32.6776C12.0446 31.7024 10.8243 30.6085 9.62538 29.4104C4.54958 24.3385 1.72507 19.3323 1.23013 14.5308C0.919799 11.5204 1.85883 8.47842 3.80642 6.18495C5.66362 3.99796 8.23039 2.70071 11.0339 2.53235C11.2501 2.51938 11.4653 2.51289 11.6795 2.51289C14.5029 2.51289 17.1313 3.63568 19.1389 5.71414C19.3623 5.94532 19.6761 6.07799 19.9999 6.07799C20.3239 6.07799 20.6377 5.9454 20.861 5.71414C23.021 3.47802 25.8997 2.34804 28.9661 2.53235C31.7696 2.70079 34.3364 3.99796 36.1936 6.18495C38.1411 8.47834 39.0802 11.5204 38.7699 14.5308Z" fill="#171719"/>
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_35_811">
+                                        <rect width="40" height="40" fill="white"/>
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            <h3 class="h1 fw-600 mb-25">PASSION</h3>
+                            <p class="c-grey2">
+                                <strong class="c-primary font-weight-600">DE CARLO means passion:</strong>
+                                <br>
+                                The gift for the anniversary, for an important day or simply to celebrate everyday life ... a whirlwind of emotions, feelings and memories that will make the jewel, the extra element that can leave a little big sign.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bg-img2 bg-style">
+            <div class="container padding-70 lg:padding-176 t-align--center">
+                <h2 class="h1 font-weight-600 c-secondary t-transf--uc mb-15">WHY CHOOSE US ?</h2>
+                <p class="c-grey2 mb-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididu</p>
+                <a class="btn btn-secondary btn-border--none h5 c-primary t-decor--none padding-12-32" href="">BACK TO SHOPPING NOW</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bc-primary">
+            <div class="container">
+                <div class="d-grid p-item--center border-bt-dark2 padding-40 lg:padding-50">
+                    <img class="logo-ft-size lg:logo-ft-size" src="img/footer/img-logoft.png" alt="">
+                </div>
+                <div class="d-flex flex-cl lg:d-flex-row lg:j-content--sb gap-60 padding-50 lg:padding-70">
+                    <div class="flex__item d-flex flex-cl gap-70 lg:order-4">
+                        <form class="d-flex flex-cl gap-20 lg:gap-30" action="">
+                            <label class="h5 c-grey5 l-spacing" for="">SUBSCRIBE FOR NEWSLETTER</label>
+                            <div class="p-relative height-41 lg:width-280">
+                                <input class="wh-100 padding-10 bc-dark btn-border--none" type="email" placeholder="Your Email">
+                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-13 right-10">Subcribe</button>
+                            </div>
+                        </form>
+
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">Social</h3>
+                            <ul class="d-flex a-item--center gap-15 l-style--none">
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-fb.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2"href=""><img class="wh-100" src="img/footer/img-ins.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-linkedin.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-yt.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">CUSTOMER CARE</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">track your order</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Frequent Question</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item lg:max-width-281">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL INFORMATION:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><p class="c-grey2">Company name: De Carlo Nicholas</p></li>
+                                <li><p class="c-grey2">VAT number: 07020260480</p></li>
+                                <li><p class="c-grey2">REA: FI-674952</p></li>
+                                <li><p class="c-grey2">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL TERMS:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informazioni legali</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Condizioni generali di vendita</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informativa sulla privacy</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Cookie policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-23">
+                    <p class="c-grey2 t-align--center">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

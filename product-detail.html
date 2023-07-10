@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/var.css">
+    <link rel="stylesheet" href="style/utility.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@0;1&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="p-fixed width-100 z-index-100 " style="top: 0;">
+            <div class="d-grid grid-layout1 bc-primary padding-13-15 lg:padding-13-50">
+                <div class="grid__item lg:t-align--center">
+                    <span class="h5 c-secondary fw-400 t-transf--uc">Free shipping in Italy</span>
+                </div>
+                <div class="grid__item t-align--end">
+                    <select class="h5 fw-400 c-secondary btn-link btn-border--none">
+                        <option value="">Italian</option>
+                        <option value="">English</option>
+                        <option value="">VietNam</option>
+                        <option value="">Chinese</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-flex j-content--sb a-item--center padding-15 lg:padding-20-50 p-relative bc-secondary">
+                <a class="d-iblock logo-size lg:logo-size" href="index.html">
+                    <img class="wh-100" src="img/header/logo.png" alt="logo">
+                </a>
+                <nav class="p-absolute lg:p-static width-100 lg:width-fit top-70 left-0 dropdown-menu">
+                    <ul class="l-style--none d-flex flex-cl lg:j-content--center lg:d-flex-row gap-30 lg:gap-50 padding-30-15 lg:padding-0 bc-secondary">
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="">Shop</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BH.html">Our History</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="COP.html">JEWELERY PRODUCTION</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BAD.html">BECOME A DEALER</a></li>
+                        <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="Contact.html">CONTACT</a></li>
+                    </ul>
+                </nav>
+                <div class="d-flex gap-20 lg:gap-25 c-primary">
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-search.png" alt="search">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-love.png" alt="love">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-user.png" alt="user">
+                    </button>
+                    <button class="btn btn-link btn-border--none max-wh-1">
+                        <img class="wh-100" src="img/header/icon-cart.png" alt="cart">
+                    </button>
+                    <div id="togglebar" class=" d-flex flex-cl toggle lg:d-none wh-20" onclick="togglebar()" style="gap: 0.9rem;">
+                        <div class="bar1 wh-100"></div>
+                        <div class="bar2 wh-100"></div>
+                        <div class="bar3 wh-100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="mt-120 lg:mt-160">
+        <section>
+            <div class="container padding-ver-40 lg:padding-ver-100">
+                <ul class="d-flex mb-40 lg:mb-60">
+                    <li class="l-style--none mr-15 c"><a class="p t-transf--uc circle-icon t-decor--none c-grey3" href="">home</a></li>
+                    <li class="margin-0-15 circle-grey3"><a class="p t-transf--uc circle-icon t-decor--none c-grey3" href="">ring</a></li>
+                    <li class="margin-0-15 circle-grey3"><a class="p t-transf--uc circle-icon t-decor--none c-primary" href="">product name</a></li>
+                </ul>
+                <div class="d-grid grid-layout4 gap-40 lg:gap-101">
+                    <div class="grid-item">
+                        <div class="product-detail">
+                            <div class="image-container mb-15 lg:mb-20">
+                                <img class="wh-100" id="large-image" src="img/main/product-detail/img-1.png" alt="Large Image">
+                            </div>
+                            <div class="d-flex j-content--center a-item--center gap-13 lg:gap20 p-relative">
+                                <img class="thumbnail" src="img/main/product-detail/img-1.png" alt="Thumbnail 1" onclick="showImage(0)">
+                                <img class="thumbnail" src="img/main/product-detail/img-2.png" alt="Thumbnail 2" onclick="showImage(1)">
+                                <img class="thumbnail" src="img/main/product-detail/img-3.png" alt="Thumbnail 3" onclick="showImage(2)">
+                                <img class="thumbnail" src="img/main/product-detail/img-4.png" alt="Thumbnail 3" onclick="showImage(3)">
+                                <div class="p-absolute d-flex j-content--sb width-100 padding-15">
+                                    <button class="btn btn-link btn-border--none max-wh-2" onclick="previousImage()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                          <path d="M9.5 18.5L0.999999 9.5L9.5 1" stroke="#171719" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                    <button class="btn btn-link btn-border--none max-wh-2"  onclick="nextImage()">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20" fill="none">
+                                          <path d="M1 18.5L9.5 9.5L1 1" stroke="#171719" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <h1 class="h1 fw-600 t-transf--uc mb-10">product name</h1>
+                        <span class="h1 d-iblock mb-30 lg:mb-50 c-grey1 price">99.99</span>
+                        <form class="mb-30" action="">
+                            <div class="d-flex flex-cl gap-20 mb-30 lg:mb-40">
+                                <label class="d-flex j-content--sb" for="">
+                                    <span class="h4 fw-600 t-transf--uc" style="line-height: normal;">Size</span>
+                                    <span class="c-grey2 d-flex a-item--center gap-10">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M19.8747 5.24473L14.7553 0.125308C14.5882 -0.0417693 14.3183 -0.0417693 14.1512 0.125308L0.125308 14.1512C-0.0417693 14.3183 -0.0417693 14.5882 0.125308 14.7553L5.24473 19.8747C5.4118 20.0418 5.6817 20.0418 5.84877 19.8747L19.8747 5.84877C20.0418 5.6817 20.0418 5.4118 19.8747 5.24473ZM5.54461 18.9665L1.03352 14.4554L4.42219 11.0667L5.96016 12.6047C6.12295 12.7761 6.39713 12.7803 6.56421 12.6133C6.73557 12.4505 6.73985 12.1763 6.57277 12.0092C6.56849 12.0049 6.56849 12.0049 6.56421 12.0006L5.02624 10.467L6.14437 9.34883L8.54343 11.7479C8.71051 11.915 8.98468 11.915 9.14748 11.7436C9.31455 11.5765 9.31455 11.3066 9.14748 11.1396L6.74842 8.74049L7.86655 7.62236L9.40452 9.15605C9.5716 9.32312 9.84149 9.32312 10.0086 9.15605C10.1756 8.98897 10.1756 8.71907 10.0086 8.552L8.4706 7.01831L9.58873 5.90018L11.9878 8.29924C12.1549 8.46632 12.4248 8.46632 12.5918 8.29924C12.7589 8.13216 12.7589 7.86227 12.5918 7.69519L10.1928 5.29613L11.3109 4.178L12.8489 5.71597C13.016 5.88305 13.2859 5.88733 13.4529 5.72025C13.62 5.55317 13.6243 5.28328 13.4572 5.1162C13.4572 5.1162 13.4572 5.1162 13.4529 5.11192L11.9278 3.5611L13.0459 2.44297L15.445 4.84203C15.6121 5.0091 15.882 5.0091 16.0491 4.84203C16.2161 4.67495 16.2161 4.40505 16.0491 4.23798L13.65 1.83892L14.4554 1.03352L18.9665 5.54461L5.54461 18.9665Z" fill="#84848E"/>
+                                        </svg>
+                                        Find your size
+                                    </span>
+                                </label>
+                                <select class="p padding-11-18 border-grey6" name="" id="">
+                                    <option value="">50</option>
+                                    <option value="">60</option>
+                                    <option value="">70</option>
+                                    <option value="">80</option>
+                                </select>
+                            </div>
+                            <div class="d-grid grid-layout7 gap-15">
+                                <div class="grid-item">
+                                    <div class="quantity-button d-flex border-grey6 height-100 lg:max-width-150">
+                                        <button class="minus-btn btn btn-link btn-border--none padding-11-18" onclick="decreaseQuantity(event)">-</button>
+                                        <input class="p quantity-input t-align--center btn-border--none padding-11-auto width-100" type="number" value="1" readonly>
+                                        <button class="plus-btn btn btn-link btn-border--none padding-11-18" onclick="increaseQuantity(event)">+</button>
+                                    </div>
+                                </div>
+                                <div class="grid-item">
+                                    <button class="btn btn-secondary border-grey6 padding-13 t-transf--uc l-spacing wh-100">Add to cart</button>
+                                </div>
+                                <div class="grid-item">
+                                    <button class="btn btn-secondary border-grey6 padding-15">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                            <path d="M9.99945 19.167C9.88779 19.167 9.78029 19.122 9.70279 19.0428L1.52945 10.7337C-0.507214 8.66449 -0.507214 5.29616 1.52945 3.22533C2.51779 2.22033 3.83362 1.66699 5.23195 1.66699C6.63112 1.66699 7.94612 2.22033 8.93445 3.22533L9.99945 4.30866L11.0645 3.22533C12.0528 2.22033 13.3678 1.66699 14.767 1.66699C16.1653 1.66699 17.4803 2.22033 18.4686 3.22533C20.5053 5.29533 20.5053 8.66366 18.4686 10.7337L10.2961 19.0428C10.2186 19.122 10.1111 19.167 9.99945 19.167ZM5.23195 2.50033C4.05862 2.50033 2.95445 2.96616 2.12362 3.80949C0.404453 5.55783 0.404453 8.40199 2.12362 10.1487L9.99945 18.1562L17.8753 10.1495C19.5945 8.40199 19.5945 5.55783 17.8753 3.81033C17.0445 2.96616 15.9403 2.50033 14.767 2.50033C13.5928 2.50033 12.4895 2.96616 11.6586 3.80949L10.2961 5.19449C10.1395 5.35366 9.85862 5.35366 9.70195 5.19449L8.33945 3.80949C7.50945 2.96616 6.40612 2.50033 5.23195 2.50033Z" fill="black"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="grid-item">
+                                    <a class="btn btn-primary border-grey6 padding-13-15 t-align--center t-decor--none t-transf--uc l-spacing width-100" href="">Buy now</a>
+                                </div>
+                            </div>
+                        </form>
+                        <span class="l-spacing fw-400 d-none lg:d-iblock padding-7-18 mb-50 bc-grey0">GET THIS PRODUCT BY 1ST APR !</span>
+                        <p class="c-grey2 mb-40">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                        <h2 class="h4 fw-600 t-transf--uc mb-40">OUR GIFT BOX EXCLUSIVELY FOR YOU</h2>
+                        <img class="width-100" src="img/main/product-detail/img-5.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container" style="overflow: hidden;">
+                <div class="d-flex gap-40 padding-13 lg:padding-0 scroll">
+                    <button class="btn btn-link btn-success active-btn flex-item fs-18 " onclick="toggleFAQChange(this, 1)">PRODUCT INFORMATION</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this)">OUR SERVICE</button>
+                    <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this)">PAYMENT METHOD</button>
+                </div>
+                <div>
+                    <div class="FAQ-change slide-in" data-faq="1">
+                        <div class="d-flex flex-cl lg:d-flex-row lg:j-content--sb lg:padding-80-0">
+                            <div class="">
+                                <h2 class="h2 fw-600 t-transf--uc mb-35">product info</h2>
+                                <ul class="d-flex flex-cl gap-15 ml-16">
+                                    <li class="c-grey2">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="c-grey2">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="c-grey2">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                    <li class="c-grey2">Sed ut perspiciatis unde omnis iste natus error sit</li>
+                                </ul>
+                            </div>
+                            <img class="width-100 lg:max-width-499" src="img/main/product-detail/img-6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="featured-product">
+            <div class="container padding-ver-40 lg:padding-ver-100">
+                <h2 class="h1 line-h-15 l-spacing t-align--center mb-25 lg:mb-45 font-weight-600">FEATURED PRODUCT</h2>
+                <div class="d-grid grid-layout3 gap-15 padding-13 lg:padding-0 scroll">
+                    <div class="grid__item">
+                        <div class="card d-flex flex-cl a-item--center">
+                            <div class="p-relative">
+                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
+                                </a>
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-flex flex-cl a-item--center">
+                            <div class="p-relative">
+                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
+                                </a>
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-flex flex-cl a-item--center">
+                            <div class="p-relative">
+                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
+                                </a>
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-flex flex-cl a-item--center">
+                            <div class="p-relative">
+                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
+                                </a>
+                                <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
+                                </button>
+                            </div>
+                            <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
+                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
+                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-service bc-grey0">
+            <div class="container padding-ver-40 lg:padding-ver-100">
+                <h2 class="h1 t-align--center c-primary l-spacing t-transf--uc mb-25 lg:mb-45 font-weight-600">Our Service</h2>
+                <div class="d-grid grid-layout5 gap-20">
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex flex-cl a-item--center">
+                                <h3 class="h4 mb-5 l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                                        <path d="M0.5 0.5L5.5 4.72449L0.5 9.5" stroke="#171719" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex flex-cl a-item--center">
+                                <h3 class="h4 mb-5  l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                                        <path d="M0.5 0.5L5.5 4.72449L0.5 9.5" stroke="#171719" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex flex-cl a-item--center">
+                                <h3 class="h4 mb-5  l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                                        <path d="M0.5 0.5L5.5 4.72449L0.5 9.5" stroke="#171719" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__item">
+                        <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
+                            <img class="wh-40" src="img/main/card/parcel-1.png" alt="">
+                            <div class="card-body t-align--center d-flex flex-cl a-item--center">
+                                <h3 class="h4 mb-5 l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                                <a class="t-decor--none d-flex gap-10 a-item--center" href="">
+                                    <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="6" height="10" viewBox="0 0 6 10" fill="none">
+                                        <path d="M0.5 0.5L5.5 4.72449L0.5 9.5" stroke="#171719" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="bc-primary">
+            <div class="container">
+                <div class="d-grid p-item--center border-bt-dark2 padding-40 lg:padding-50">
+                    <img class="logo-ft-size lg:logo-ft-size" src="img/footer/img-logoft.png" alt="">
+                </div>
+                <div class="d-flex flex-cl lg:d-flex-row lg:j-content--sb gap-60 padding-50 lg:padding-70">
+                    <div class="flex__item d-flex flex-cl gap-70 lg:order-4">
+                        <form class="d-flex flex-cl gap-20 lg:gap-30" action="">
+                            <label class="h5 c-grey5 l-spacing" for="">SUBSCRIBE FOR NEWSLETTER</label>
+                            <div class="p-relative height-41 lg:width-280">
+                                <input class="wh-100 padding-10 bc-dark btn-border--none" type="email" placeholder="Your Email">
+                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-13 right-10">Subcribe</button>
+                            </div>
+                        </form>
+
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">Social</h3>
+                            <ul class="d-flex a-item--center gap-15 l-style--none">
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-fb.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2"href=""><img class="wh-100" src="img/footer/img-ins.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-linkedin.png" alt=""></a></li>
+                                <li class="max-wh-1"><a class="d-iblock wh-100 t-decor--none c-grey2" href=""><img class="wh-100" src="img/footer/img-yt.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">CUSTOMER CARE</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">track your order</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Frequent Question</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item lg:max-width-281">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL INFORMATION:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><p class="c-grey2">Company name: De Carlo Nicholas</p></li>
+                                <li><p class="c-grey2">VAT number: 07020260480</p></li>
+                                <li><p class="c-grey2">REA: FI-674952</p></li>
+                                <li><p class="c-grey2">Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex__item">
+                        <div class="d-flex flex-cl gap-20 lg:gap-30">
+                            <h3 class="h5 c-grey5 l-spacing">LEGAL TERMS:</h3>
+                            <ul class="d-flex flex-cl gap-15 l-style--none">
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informazioni legali</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Condizioni generali di vendita</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Informativa sulla privacy</a></li>
+                                <li><a class="d-iblock t-decor--none c-grey2" href="">Cookie policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="padding-23">
+                    <p class="c-grey2 t-align--center">De Carlo Nicholas- VAT number: 07020260480- REA: FI-674952 - Registered office: Via di San Quirico a Ruballa 15, 50012, Bagno a Ripoli (FI), Italy</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
