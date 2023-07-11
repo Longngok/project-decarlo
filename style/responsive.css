@@ -17,6 +17,11 @@
         margin: 0 auto;
     }    
 
+    .thumbnail {
+        max-height: 16.1rem;
+    }
+
+
     /*--spacing--*/
 }
 
@@ -42,7 +47,7 @@
     /*--spacing--*/
     .container
     {
-        max-width: 1180px;
+        max-width: 992px;
         margin: 0 auto;
     }
 
@@ -480,9 +485,8 @@
         transition: transform 0.3s ease;
         max-height: 61.1rem;
     }
-
     .thumbnail {
-        max-height: 16.1rem;
+        max-height: 10rem;
     }
 }
 
@@ -492,7 +496,9 @@
         max-width: 1200px;
         margin: 0 auto;
     }
-
+    .thumbnail {
+        max-height: 16.1rem;
+    }
  }
 
 

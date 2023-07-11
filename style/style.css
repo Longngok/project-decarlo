@@ -196,8 +196,8 @@
 
 
 .product-detail {
-    display: grid;
-    grid-template-rows: 1fr auto;
+    display: flex;
+    flex-direction: column;
   }
   
 .image-container {
