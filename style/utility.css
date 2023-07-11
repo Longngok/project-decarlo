@@ -37,10 +37,15 @@ body
     font-weight: 600;
 }
 
-.h1, .h2, .h3, .h4, .h5, .fs-18
+.h1, .h2, .h3, .h4, .h5, .fs-18, .fs-14-16
 {
     line-height: 1.5;
     letter-spacing: 0.2rem;
+}
+
+.fs-14-16
+{
+    font-size: var(--heading-ex-small);
 }
 
 .h1
@@ -50,7 +55,7 @@ body
 
 .h2
 {
-    font-size: var(--heading-large);
+    font-size: 1.8rem;
 }
 
 .h3
@@ -75,7 +80,7 @@ body
 
 .p
 {
-    font-family: var(--font-size-2);
+    font-family: var(--font-family-2);
     font-size: var(--heading-small);
     line-height: calc(28/18);
 }
@@ -123,6 +128,11 @@ body
     height: 2.4rem;
 }
 
+.max-width-125
+{
+    max-width: 12.5rem;
+}
+
 .max-width-345
 {
     max-width: 345px;
@@ -146,10 +156,10 @@ body
     height: 100%;
 }
 
-.wh-150
+.min-wh-150
 {
-    width: 15rem;
-    height: 15rem;
+    min-width: 15rem;
+    min-height: 15rem;
 }
 
 .width-5
@@ -175,6 +185,11 @@ body
 .height-41
 {
     height: 4.1rem;
+}
+
+.height-52
+{
+    height: 5.2rem;
 }
 
 .height-300
@@ -505,9 +520,9 @@ body
 {
     top: 50%;
 }
-.top-13
+.top-9
 {
-    top: var(--spacing-13);
+    top: 0.9rem;
 }
 
 .top-20
@@ -681,15 +696,13 @@ body
 .btn
 {
     display: inline-block;
+    font-weight: 400;
+    font-size: var(--heading-ex-small);
+    line-height: calc(24/14);
     letter-spacing: 0.2rem;
     cursor: pointer;
 }
 
-.btn-wh
-{
-    max-width: 12.5rem;
-    width: 100%;
-}
 
 .btn-primary
 {
@@ -700,6 +713,7 @@ body
 .btn-secondary
 {
     background-color: var(--color-secondary);
+    color: var(--color-primary);
 }
 
 .btn-link

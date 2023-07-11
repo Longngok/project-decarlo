@@ -147,3 +147,15 @@ function closeVideo() {
   videoPlayer.pause();
   videoPlayer.currentTime = 0;
 }
+
+
+// var input = document.querySelector('.cus-input');
+// var contentCustome = document.querySelector('.content-custome');
+
+// input.addEventListener('input', function() {
+//     if (input.value !== '') {
+//         input.classList.add('filled');
+//     } else {
+//         input.classList.remove('filled');
+//     }
+// });

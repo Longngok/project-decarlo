@@ -38,8 +38,7 @@
 /*--banner--*/
 .banner-img
 {
-    max-height: 37.5rem;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     min-width: 100%;
     min-height: 100%;
@@ -47,14 +46,7 @@
 
 .banner-images {
     transition: transform 0.3s ease;
-  }
-
-.video-wrapper {
-    flex: 1;
-}
-  
-.content-wrapper {
-    flex: 1;
+    max-height: 37.5rem;
 }
 
 .btn-play__position
@@ -240,10 +232,10 @@
     content: "";
     position: absolute;
     height: 100%;
-    width: 15px;
+    width: 50px;
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 0 0 10px #fff;
-    filter: blur(1px);
+    filter: blur(5px);
     opacity: 0.5;
     transition: 1s;
     transform: rotate(45deg) translateX(-120px) translateY(-80px);
@@ -253,3 +245,30 @@
     animation: hover-animation 1.5s forwards linear;
 }
 
+.content-custome
+{
+    position: absolute;
+    top: 1.5rem;
+    left: 2rem;
+    transition: all 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.cus-input:focus ~ .content-custome,
+.cus-input:valid ~ .content-custome {
+    top: 0;
+    font-size: 10px;
+}
+
+.cus-select
+{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.select-arrow__position
+{
+    top: 2.4rem;
+    right: 2rem;
+}

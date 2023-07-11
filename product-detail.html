@@ -111,12 +111,17 @@
                                         Find your size
                                     </span>
                                 </label>
-                                <select class="p padding-11-18 border-grey6" name="size" id="selectSize">
-                                    <option value="">50</option>
-                                    <option value="">60</option>
-                                    <option value="">70</option>
-                                    <option value="">80</option>
-                                </select>
+                                <div class="p-relative">
+                                    <select class="padding-18-20 border-grey6 cus-select width-100">
+                                        <option value="">50</option>
+                                        <option value="">70</option>
+                                        <option value="">80</option>
+                                        <option value="">90</option>
+                                    </select>
+                                    <svg class="p-absolute select-arrow__position" xmlns="http://www.w3.org/2000/svg" width="12" height="7" viewBox="0 0 12 7" fill="none">
+                                        <path d="M11 1L6.30612 6L1 1" stroke="#171719" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
                             </div>
                             <div class="d-grid grid-layout7 gap-15">
                                 <div class="grid-item">
@@ -127,23 +132,23 @@
                                     </div>
                                 </div>
                                 <div class="grid-item">
-                                    <button class="btn btn-secondary border-grey6 padding-13 t-transf--uc l-spacing wh-100">Add to cart</button>
+                                    <button class="btn btn-secondary border-grey6 padding-13 t-transf--uc wh-100">Add to cart</button>
                                 </div>
                                 <div class="grid-item">
-                                    <button class="btn btn-secondary border-grey6 padding-15">
+                                    <button class="btn btn-secondary border-grey6 padding-15 height-52">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
                                             <path d="M9.99945 19.167C9.88779 19.167 9.78029 19.122 9.70279 19.0428L1.52945 10.7337C-0.507214 8.66449 -0.507214 5.29616 1.52945 3.22533C2.51779 2.22033 3.83362 1.66699 5.23195 1.66699C6.63112 1.66699 7.94612 2.22033 8.93445 3.22533L9.99945 4.30866L11.0645 3.22533C12.0528 2.22033 13.3678 1.66699 14.767 1.66699C16.1653 1.66699 17.4803 2.22033 18.4686 3.22533C20.5053 5.29533 20.5053 8.66366 18.4686 10.7337L10.2961 19.0428C10.2186 19.122 10.1111 19.167 9.99945 19.167ZM5.23195 2.50033C4.05862 2.50033 2.95445 2.96616 2.12362 3.80949C0.404453 5.55783 0.404453 8.40199 2.12362 10.1487L9.99945 18.1562L17.8753 10.1495C19.5945 8.40199 19.5945 5.55783 17.8753 3.81033C17.0445 2.96616 15.9403 2.50033 14.767 2.50033C13.5928 2.50033 12.4895 2.96616 11.6586 3.80949L10.2961 5.19449C10.1395 5.35366 9.85862 5.35366 9.70195 5.19449L8.33945 3.80949C7.50945 2.96616 6.40612 2.50033 5.23195 2.50033Z" fill="black"/>
                                         </svg>
                                     </button>
                                 </div>
                                 <div class="grid-item">
-                                    <a class="btn btn-primary border-grey6 padding-13-15 t-align--center t-decor--none t-transf--uc l-spacing width-100" href="">Buy now</a>
+                                    <a class="btn btn-primary border-grey6 padding-13-15 t-align--center t-decor--none t-transf--uc width-100" href="">Buy now</a>
                                 </div>
                             </div>
                         </form>
                         <span class="l-spacing fw-400 d-none lg:d-iblock padding-7-18 mb-50 bc-grey0">GET THIS PRODUCT BY 1ST APR !</span>
                         <p class="c-grey2 mb-40">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudanm, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
-                        <h2 class="h4 fw-600 t-transf--uc mb-40">OUR GIFT BOX EXCLUSIVELY FOR YOU</h2>
+                        <h2 class="fs-14-16 fw-600 t-transf--uc mb-40">OUR GIFT BOX EXCLUSIVELY FOR YOU</h2>
                         <img class="width-100" src="img/main/product-detail/img-5.png" alt="anh-sp">
                     </div>
                 </div>
@@ -158,7 +163,7 @@
                 </div>
                 <div>
                     <div class="FAQ-change slide-in" data-faq="1">
-                        <div class="d-flex flex-cl lg:d-flex-row lg:j-content--sb lg:padding-80-0">
+                        <div class="d-flex flex-cl gap-40 lg:d-flex-row lg:j-content--sb padding-ver-40 lg:padding-80-0">
                             <div class="">
                                 <h2 class="h2 fw-600 t-transf--uc mb-35">product info</h2>
                                 <ul class="d-flex flex-cl gap-15 ml-16">
@@ -176,73 +181,73 @@
         </section>
         <section class="featured-product">
             <div class="container padding-ver-40 lg:padding-ver-100">
-                <h2 class="h1 line-h-15 l-spacing t-align--center mb-25 lg:mb-45 font-weight-600">FEATURED PRODUCT</h2>
-                <div class="d-grid grid-layout3 gap-15 padding-13 lg:padding-0 scroll">
+                <h2 class="h1 line-h-15 l-spacing t-align--center mb-25 lg:mb-45 fw-600">FEATURED PRODUCT</h2>
+                <div class="d-grid grid-layout3 gap-15 lg:gap-20 padding-13 lg:padding-0 scroll">
                     <div class="grid__item">
                         <div class="card d-flex flex-cl a-item--center">
-                            <div class="p-relative">
-                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
-                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="anh-sp">
+                            <div class="p-relative min-wh-150 wh-100">
+                                <a class="d-iblock card-img p-relative wh-100" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
                                 </a>
                                 <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
-                                    <img class="wh-100" src="img/header/icon-love.png" alt="like">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
                                 </button>
                             </div>
                             <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
-                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <h3 class="h5 l-spacing c-primary t-transf--uc fw-600">product name</h3>
                                 <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
-                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
                             </div>
                         </div>
                     </div>
                     <div class="grid__item">
                         <div class="card d-flex flex-cl a-item--center">
-                            <div class="p-relative">
-                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
-                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="anh-sp">
+                            <div class="p-relative min-wh-150 wh-100">
+                                <a class="d-iblock card-img p-relative wh-100" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
                                 </a>
                                 <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
-                                    <img class="wh-100" src="img/header/icon-love.png" alt="like">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
                                 </button>
                             </div>
                             <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
-                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <h3 class="h5 l-spacing c-primary t-transf--uc fw-600">product name</h3>
                                 <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
-                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
                             </div>
                         </div>
                     </div>
                     <div class="grid__item">
                         <div class="card d-flex flex-cl a-item--center">
-                            <div class="p-relative">
-                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
-                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="anh-sp">
+                            <div class="p-relative min-wh-150 wh-100">
+                                <a class="d-iblock card-img p-relative wh-100" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
                                 </a>
                                 <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
-                                    <img class="wh-100" src="img/header/icon-love.png" alt="like">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
                                 </button>
                             </div>
                             <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
-                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <h3 class="h5 l-spacing c-primary t-transf--uc fw-600">product name</h3>
                                 <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
-                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
                             </div>
                         </div>
                     </div>
                     <div class="grid__item">
                         <div class="card d-flex flex-cl a-item--center">
-                            <div class="p-relative">
-                                <a class="d-iblock card-img p-relative wh-150 lg:wh-280" href="product-detail.html">
-                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="anh-sp">
+                            <div class="p-relative min-wh-150 wh-100">
+                                <a class="d-iblock card-img p-relative wh-100" href="product-detail.html">
+                                    <img class="wh-100" src="img/main/card/img-card5.png" alt="">
                                 </a>
                                 <button class="btn btn-link btn-border--none max-wh-1 p-absolute top-20 right-20">
-                                    <img class="wh-100" src="img/header/icon-love.png" alt="like">
+                                    <img class="wh-100" src="img/header/icon-love.png" alt="">
                                 </button>
                             </div>
                             <div class="card-body d-flex flex-cl a-item--center gap-10 mt-20">
-                                <h3 class="h5 l-spacing c-primary t-transf--uc font-weight-600">product name</h3>
+                                <h3 class="h5 l-spacing c-primary t-transf--uc fw-600">product name</h3>
                                 <p class="h5 l-spacing c-grey1 mb-10 price">99.99</p>
-                                <button class="btn btn-secondary border-primary l-spacing t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
+                                <button class="btn btn-secondary border-primary t-transf--uc padding-8-14 lg:padding-12-32">add to cart</button>
                             </div>
                         </div>
                     </div>
@@ -251,13 +256,13 @@
         </section>
         <section class="our-service bc-grey0">
             <div class="container padding-ver-40 lg:padding-ver-100">
-                <h2 class="h1 t-align--center c-primary l-spacing t-transf--uc mb-25 lg:mb-45 font-weight-600">Our Service</h2>
+                <h2 class="h1 t-align--center c-primary l-spacing t-transf--uc mb-25 lg:mb-45 fw-600">Our Service</h2>
                 <div class="d-grid grid-layout5 gap-20">
                     <div class="grid__item">
                         <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
                             <img class="wh-40" src="img/main/card/parcel-1.png" alt="anh-sp">
                             <div class="card-body t-align--center d-flex flex-cl a-item--center">
-                                <h3 class="h4 mb-5 l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <h3 class="h4 mb-5 l-spacing fw-600">FREE SHIPPING IN ITALY</h3>
                                 <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                 <a class="t-decor--none d-flex gap-10 a-item--center" href="">
                                     <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
@@ -272,7 +277,7 @@
                         <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
                             <img class="wh-40" src="img/main/card/parcel-1.png" alt="anh-sp">
                             <div class="card-body t-align--center d-flex flex-cl a-item--center">
-                                <h3 class="h4 mb-5  l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <h3 class="h4 mb-5  l-spacing fw-600">FREE SHIPPING IN ITALY</h3>
                                 <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                 <a class="t-decor--none d-flex gap-10 a-item--center" href="">
                                     <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
@@ -287,7 +292,7 @@
                         <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
                             <img class="wh-40" src="img/main/card/parcel-1.png" alt="anh-sp">
                             <div class="card-body t-align--center d-flex flex-cl a-item--center">
-                                <h3 class="h4 mb-5  l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <h3 class="h4 mb-5  l-spacing fw-600">FREE SHIPPING IN ITALY</h3>
                                 <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                 <a class="t-decor--none d-flex gap-10 a-item--center" href="">
                                     <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
@@ -302,7 +307,7 @@
                         <div class="card d-grid p-item--center gap-30 bc-secondary padding-20-50 lg:padding-50-20">
                             <img class="wh-40" src="img/main/card/parcel-1.png" alt="anh-sp">
                             <div class="card-body t-align--center d-flex flex-cl a-item--center">
-                                <h3 class="h4 mb-5 l-spacing font-weight-600">FREE SHIPPING IN ITALY</h3>
+                                <h3 class="h4 mb-5 l-spacing fw-600">FREE SHIPPING IN ITALY</h3>
                                 <p class="c-grey2 mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
                                 <a class="t-decor--none d-flex gap-10 a-item--center" href="">
                                     <span class="h5 c-primary l-spacing t-transf--uc l-spacing">read more</span>
@@ -329,7 +334,7 @@
                             <label class="h5 c-grey5 l-spacing">SUBSCRIBE FOR NEWSLETTER</label>
                             <div class="p-relative height-41 lg:width-280">
                                 <input class="wh-100 padding-10 bc-dark btn-border--none" type="email" placeholder="Your Email">
-                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-13 right-10">Subcribe</button>
+                                <button type="submit" class="btn btn-link btn-border--none c-grey5 p-absolute top-9 right-10">Subcribe</button>
                             </div>
                         </form>
 
