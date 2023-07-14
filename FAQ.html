@@ -14,17 +14,17 @@
 </head>
 <body>
     <header>
-        <div class="p-fixed width-100 z-index-100 " style="top: 0;">
+        <div class="p-absolute width-100" style="top: 0;">
             <div class="d-grid grid-layout1 bc-primary padding-13-15 lg:padding-13-50">
                 <div class="grid__item lg:t-align--center">
                     <span class="h5 c-secondary fw-400 t-transf--uc">Free shipping in Italy</span>
                 </div>
                 <div class="grid__item t-align--end">
                     <select class="h5 fw-400 c-secondary btn-link btn-border--none">
-                        <option value="">Italian</option>
-                        <option value="">English</option>
-                        <option value="">VietNam</option>
-                        <option value="">Chinese</option>
+                        <option value="it">Italian</option>
+                        <option value="en">English</option>
+                        <option value="vi">Vietnamese</option>
+                        <option value="zh">Chinese</option>
                     </select>
                 </div>
             </div>
@@ -32,8 +32,8 @@
                 <a class="d-iblock logo-size lg:logo-size" href="index.html">
                     <img class="wh-100" src="img/header/logo.png" alt="logo">
                 </a>
-                <nav class="p-absolute lg:p-static width-100 lg:width-fit top-70 left-0 dropdown-menu">
-                    <ul class="l-style--none d-flex flex-cl lg:j-content--center lg:d-flex-row gap-30 lg:gap-50 padding-30-15 lg:padding-0 bc-secondary">
+                <nav class="p-absolute lg:p-static width-100 lg:width-fit top-70 left-0 dropdown-menu z-index-100">
+                    <ul class="l-style--none d-flex flex-cl lg:j-content--center lg:d-flex-row gap-30 md:gap-40 lg:gap-50 padding-30-15 lg:padding-0 bc-secondary">
                         <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="collection.html">Shop</a></li>
                         <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="BH.html">Our History</a></li>
                         <li><a class="d-iblock t-decor--none h5 c-primary fw-400 t-transf--uc" href="COP.html">JEWELERY PRODUCTION</a></li>
@@ -79,16 +79,18 @@
                     <button class="btn btn-link btn-success flex-item fs-18" onclick="toggleFAQChange(this, 5)">PRODUCT</button>
                 </div>
                 <div class="FAQ-container mb-60 lg:mb-100">
-                    <div class="FAQ-change slide-in" data-faq="1">
-                        <div class="boder-bt--grey3 change-menu">
+                    <div class="FAQ-change" data-faq="1">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -107,15 +109,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="boder-bt--grey3">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -134,15 +138,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="boder-bt--grey3">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -161,15 +167,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="boder-bt--grey3">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -188,71 +196,17 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="boder-bt--grey3">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="dropdown">
-                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
-                                <div class="d-flex flex-cl gap-10 mb-50">
-                                    <h4 class="h5">DELIVERY</h4>
-                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                                </div>
-                                <div class="d-flex flex-cl gap-20">
-                                    <h4 class="h5">ENGRAVINGS</h4>
-                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
-
-                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
-                                        
-                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="boder-bt--grey3">
-                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
-                            </div>
-                            <div class="dropdown">
-                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
-                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
-                                <div class="d-flex flex-cl gap-10 mb-50">
-                                    <h4 class="h5">DELIVERY</h4>
-                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
-                                </div>
-                                <div class="d-flex flex-cl gap-20">
-                                    <h4 class="h5">ENGRAVINGS</h4>
-                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
-
-                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
-                                        
-                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="FAQ-change slide-out" data-faq="2">
-                        <div class="boder-bt--grey3">
-                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -272,16 +226,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="FAQ-change slide-out" data-faq="3">
-                        <div class="boder-bt--grey3">
+                    <div class="FAQ-change" data-faq="2">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -301,16 +257,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="FAQ-change slide-out" data-faq="4">
-                        <div class="boder-bt--grey3">
+                    <div class="FAQ-change" data-faq="3">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
@@ -330,16 +288,49 @@
                             </div>
                         </div>
                     </div>
-                    <div class="FAQ-change slide-out" data-faq="5">
-                        <div class="boder-bt--grey3">
+                    <div class="FAQ-change" data-faq="4">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
                             <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
-                                <h3 class="h4">WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ? </h3>
-                                <button class="btn btn-link btn-border--none">
-                                    <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none" onclick="toggleContentAndSVG(this)">
-                                        <rect y="9.5" width="21" height="2" fill="#171719"/>
-                                        <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
-                                    </svg>
-                                </button>
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="dropdown">
+                                <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>
+                                <p class="mb-40 c-grey2">Information on Mother's Day shipping</p>
+                                <div class="d-flex flex-cl gap-10 mb-50">
+                                    <h4 class="h5">DELIVERY</h4>
+                                    <p class="c-grey2">To receive your order before Mother's Day, please make your purchase no later than 11:59 pm on Friday 30 April</p>
+                                </div>
+                                <div class="d-flex flex-cl gap-20">
+                                    <h4 class="h5">ENGRAVINGS</h4>
+                                    <p class="c-grey2">For orders with engravings, please place your order no later than 11:59 pm on Wednesday 21st April for delivery before Mother's Day.
+
+                                        We remind you that we do not accept replacements and returns of orders that include engravings or any type of personalization.
+                                        
+                                    Delivery of items with a personalization service may take longer. You can check the status of your order and its shipment by contacting the Customer Service on 800 935 547.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="FAQ-change" data-faq="5">
+                        <div class="boder-bt--grey3 change-menu" onclick="toggleDropdown(this)">
+                            <div class="d-flex lg:j-content--sb gap-30 padding-20-0 padding-ver-40">
+                              <h3 class="h4 cursor-pointer" onclick="toggleDropdown(this)">
+                                WHAT ARE THE SHIPPING TIME AND COST AVAILABLE OF DERCALO ?
+                              </h3>
+                              <button class="btn btn-link btn-border--none" onclick="toggleDropdown(this)">
+                                <svg class="toggle-svg" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                                  <rect y="9.5" width="21" height="2" fill="#171719"/>
+                                  <rect x="9.5" y="21" width="21" height="2" transform="rotate(-90 9.5 21)" fill="#171719"/>
+                                </svg>
+                              </button>
                             </div>
                             <div class="dropdown">
                                 <p class="mb-20 c-grey2">Shipping costs are free on all orders. Please allow 8 working days for delivery.</p>

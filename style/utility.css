@@ -19,6 +19,7 @@ body
     line-height: calc(24/14);
     color: var(--color-primary);
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
 }
 
 .container
@@ -347,9 +348,9 @@ body
     margin: auto
 }
 
-.margin-0-15
+.padding-0-15
 {
-    margin: 0 var(--spacing-15);
+    padding: 0 var(--spacing-15);
 }
 
 .mr-15
@@ -829,9 +830,15 @@ body
     content: ":";
 }
 
-.circle-grey3::marker
+.cursor-pointer
+{
+    cursor: pointer;
+}
+
+.circle-grey3::before
 {
     color: var(--color-grey3);
+    content: "\16EB";
 }
 
 .bg-style

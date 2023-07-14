@@ -38,11 +38,18 @@ nextButton.addEventListener("click", () => {
   bannerImages.style.transform = `translateX(-${currentPosition}%)`;
 });
 
-function toggleContentAndSVG(element) {
-  var button = element;
-  var dropdownmMenu = button.closest('.boder-bt--grey3').querySelector('.dropdown');
-  dropdownmMenu.classList.toggle("show");
-  button.classList.toggle("clicked");
+function toggleDropdown(element) {
+  var dropdownMenu = element.querySelector('.dropdown');
+  var toggleSvg = element.querySelector('.toggle-svg');
+  
+  dropdownMenu.classList.toggle("show");
+  toggleSvg.classList.toggle("clicked");
+  
+  if (dropdownMenu.classList.contains("show")) {
+    dropdownMenu.style.maxHeight = dropdownMenu.scrollHeight + "px";
+  } else {
+    dropdownMenu.style.maxHeight = "0";
+  }
 }
 
 
@@ -149,13 +156,49 @@ function closeVideo() {
 }
 
 
-// var input = document.querySelector('.cus-input');
-// var contentCustome = document.querySelector('.content-custome');
+function translateWebsite(language) {
+  // Gửi yêu cầu dịch qua API
+  var apiKey = 'YOUR_API_KEY';
+  var endpoint = 'https://translation.googleapis.com/language/translate/v2';
+  var targetElements = $('[data-translate]'); // Chọn tất cả các phần tử có thuộc tính "data-translate"
 
-// input.addEventListener('input', function() {
-//     if (input.value !== '') {
-//         input.classList.add('filled');
-//     } else {
-//         input.classList.remove('filled');
-//     }
-// });
+  $.each(targetElements, function(index, element) {
+      var textToTranslate = $(element).text();
+
+      $.ajax({
+          url: endpoint,
+          type: 'POST',
+          dataType: 'json',
+          data: {
+              q: textToTranslate,
+              target: language,
+              key: apiKey
+          },
+          success: function(response) {
+              if (response.data && response.data.translations && response.data.translations.length > 0) {
+                  var translatedText = response.data.translations[0].translatedText;
+                  $(element).text(translatedText);
+              }
+          },
+          error: function(xhr, status, error) {
+              console.error('Translation request failed:', error);
+          }
+      });
+  });
+}
+
+ document.addEventListener("DOMContentLoaded", function() {
+        var classToCheck = document.querySelectorAll(".d-flex");
+        for (var i = 0; i < classToCheck.length; i++) {
+            classToCheck[i].addEventListener("click", function() {
+                var checkbox = this.querySelector("input[type='checkbox']");
+                checkbox.checked = !checkbox.checked;
+            });
+        }
+    });
+
+
+
+
+
+
