@@ -1,3 +1,11 @@
+.fw-400
+{
+    font-weight: 400;
+}
+.fw-600
+{
+    font-weight: 600;
+}
 @media (min-width: 576px) { 
     .container
     {
@@ -66,6 +74,11 @@
     .lg\:width-fit
     {
         width: fit-content;
+    }
+
+    .lg\:width-40pc
+    {
+        width: 40%;
     }
 
     .lg\:width-auto
@@ -329,6 +342,16 @@
         position: absolute;
     }
 
+    .lg\:left-50
+    {
+        left: var(--spacing-50);
+    }
+
+    .lg\:right-50
+    {
+        right: var(--spacing-50);
+    }
+
     .lg\:bottom-30
     {
         bottom: var(--spacing-30);
@@ -481,9 +504,13 @@
         overflow: unset;
     }
 
+    .banner
+    {
+        height: 61.1rem;
+    }
+
     .banner-images {
         transition: transform 0.3s ease;
-        max-height: 61.1rem;
     }
     .thumbnail {
         max-height: 10rem;
