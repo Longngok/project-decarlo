@@ -148,12 +148,6 @@ body
     height: 100%;
 }
 
-.min-wh-150
-{
-    min-width: 15rem;
-    min-height: 15rem;
-}
-
 .width-5
 {
     width: 0.5rem;
@@ -347,6 +341,11 @@ body
 .padding-0-15
 {
     padding: 0 var(--spacing-15);
+}
+
+.mr-0
+{
+    margin-right: 0;
 }
 
 .mr-15
@@ -896,6 +895,11 @@ body
 .bg-img4
 {
     background-image: url("../img/main/product-detail/img-7.png");
+}
+
+.translatey-10
+{
+    transform: translateY(-1rem);
 }
 
   

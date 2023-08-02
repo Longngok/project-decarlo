@@ -1,15 +1,26 @@
 function togglebar() {
-    var navResponsiveElements = document.getElementsByClassName('dropdown-menu');
-    var togglebarElements = document.getElementsByClassName('toggle');
-  
-    for (var i = 0; i < navResponsiveElements.length; i++) {
-      navResponsiveElements[i].classList.toggle('active');
-    }
-  
-    for (var j = 0; j < togglebarElements.length; j++) {
-      togglebarElements[j].classList.toggle('change');
-    }
+  var navResponsiveElements = document.getElementsByClassName('dropdown-menu');
+  var togglebarElements = document.getElementsByClassName('toggle');
+  var svg1 = document.querySelector('#togglebar .svg1');
+  var svg2 = document.querySelector('#togglebar .svg2');
+
+  for (var i = 0; i < navResponsiveElements.length; i++) {
+    navResponsiveElements[i].classList.toggle('active');
   }
+
+  for (var j = 0; j < togglebarElements.length; j++) {
+    togglebarElements[j].classList.toggle('change');
+  }
+
+  // Kiểm tra trạng thái hiện tại của SVG và thay đổi nội dung tương ứng
+  if (svg1.style.display === 'block') {
+    svg1.style.display = 'none';
+    svg2.style.display = 'block';
+  } else {
+    svg1.style.display = 'block';
+    svg2.style.display = 'none';
+  }
+}
 
 
 // Lấy các phần tử cần sử dụng

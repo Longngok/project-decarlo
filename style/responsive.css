@@ -6,6 +6,19 @@
 {
     font-weight: 600;
 }
+@media (max-width: 345px) {
+    .container
+    {
+        margin: 0 var(--spacing-15);
+    }
+
+    .container-scroll
+    {
+        max-width: 345px;
+        margin: 0 0 0 1.5rem;
+    }
+}
+
 @media (min-width: 576px) { 
     .container
     {
@@ -16,21 +29,41 @@
     {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid-layout10
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .grid-layout8
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .thumbnail {
+        max-height: 16.1rem;
+    }
 }
 
 @media (min-width: 768px) { 
     .container
     {
         max-width: 768px;
-        margin: 0 auto;
+        margin: 0 2.5rem;
     }    
-
-    .thumbnail {
-        max-height: 16.1rem;
+    .grid-layout8
+    {
+        grid-template-columns: repeat(4,1fr);
     }
 
-
-    /*--spacing--*/
+    .md\:gap-60
+    {
+        gap: var(--spacing-60);
+    }
+}
+@media (min-width: 769px) {
+    .container
+    {
+        margin: 0 auto;
+    }    
 }
 
 @media(min-width: 992px) {
@@ -56,7 +89,7 @@
     .container
     {
         max-width: 1180px;
-        margin: 0 auto;
+        margin: 0 2.5rem;
     }
 
     .lg\:logo-size
@@ -79,6 +112,11 @@
     .lg\:width-40pc
     {
         width: 40%;
+    }
+
+    .lg\:width-70pc
+    {
+        width: 70%;
     }
 
     .lg\:width-auto
@@ -117,6 +155,11 @@
     .lg\:gap-25
     {
         gap: var(--spacing-25);
+    }
+
+    .lg\:gap-30
+    {
+        gap: var(--spacing-30);
     }
 
     .lg\:gap-45
@@ -469,7 +512,7 @@
         grid-column: 1/4;
     }
 
-    .grid-layout8
+    .grid-layout10
     {
         grid-template-columns: repeat(4,1fr);
     }
@@ -515,11 +558,26 @@
     .thumbnail {
         max-height: 10rem;
     }
+    .product-img
+    {
+        width: 20rem;
+        height: 20rem;
+    }
 }
 
 @media (min-width: 1200px) { 
     .thumbnail {
         max-height: 13.1rem;
+    }
+    .product-img
+    {
+        width: 28rem;
+        height: 28rem;
+    }
+
+    .container
+    {
+        margin: 0 auto;
     }
  }
 

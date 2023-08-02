@@ -120,6 +120,11 @@
     grid-template-columns: auto 1fr;
 }
 
+.grid-layout10
+{
+    grid-template-columns: 1fr;
+}
+
 .dropdown {
     transform: scaleY(0);
     transform-origin: top;
@@ -231,9 +236,9 @@
     object-fit: cover;
 }
   
-.thumbnail.active {
+/* .thumbnail.active {
     border: 2px solid var(--color-primary);
-}
+} */
 
 .card-img
 {
@@ -297,4 +302,12 @@
 input[type=checkbox]:checked
 {
     background-color: black;
+}
+
+.product-img
+{
+    min-width: 15rem;
+    min-height: 15rem;
+    width: 15rem;
+    height: 15rem;
 }
